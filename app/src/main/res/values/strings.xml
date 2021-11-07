@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Study buddy</string>
+    <string name="grainger_engineering_library">Grainger Engineering Library</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="filter_search_button">Filter search</string>
+    <string name="filler_image_description">Filler image of stick close-up with drops</string>
+    <string name="no_tags_checked_yet">No tags checked yet</string>
 </resources>
