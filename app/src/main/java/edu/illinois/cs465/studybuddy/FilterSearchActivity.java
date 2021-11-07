@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.ContextThemeWrapper;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,16 +25,18 @@ public class FilterSearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filter_search);
 
-        signal = (TextView) findViewById(R.id.signal);
+        signal = findViewById(R.id.signal);
 
-        ChipGroup filters = (ChipGroup) findViewById(R.id.filters_chip_group);
+        ChipGroup filters = findViewById(R.id.filters_chip_group);
         Tag[] tags = JsonReader.getTags(this);
 
         for (Tag t : tags) {
             Chip chip = new Chip(new ContextThemeWrapper(this, R.style.Widget_Material3_Chip_Filter));
             chip.setCheckable(true);
-            chip.setLayoutParams(new ChipGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
-                    ActionBar.LayoutParams.WRAP_CONTENT));
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT);
+            layoutParams.setMargins(0, 0, 0, 0);
+            chip.setLayoutParams(layoutParams);
             chip.setId(t.id);
             chip.setText(t.tag);
             chip.setOnCheckedChangeListener((buttonView, isChecked) -> {
