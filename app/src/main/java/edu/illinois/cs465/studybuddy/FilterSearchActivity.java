@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
@@ -34,6 +36,10 @@ public class FilterSearchActivity extends AppCompatActivity {
     private List<Integer> sortedSpaceList;
     private HashMap<Integer, Integer> matchingTags; // location ID -> number of matching tags
     private HashSet<Integer> selectedTags;
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +72,29 @@ public class FilterSearchActivity extends AppCompatActivity {
             chip.setOnCheckedChangeListener((buttonView, isChecked) -> ChangeTag(buttonView.getId(), isChecked));
             filters.addView(chip);
         }
+
+        // recycler view static info
+        // TODO:: make the list only take in values of a passed in list
+
+        StudySpace[] studySpaces = JsonReader.getSpaces(this);
+        mRecyclerView = findViewById(R.id.recycler_view);
+
+        List<LocationItem> locationItemList = new ArrayList<>();
+        for (StudySpace s : studySpaces) { // currently adding all cards
+            locationItemList.add(new LocationItem(s.name, s.description));
+        }
+
+        mRecyclerView.setHasFixedSize(true);
+
+        // use a linear layout manager
+
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        // specify an adapter and pass in our locationItemList
+
+        mAdapter = new MyAdapter(locationItemList, this);
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     private void ChangeTag(int tagId, boolean added) {
