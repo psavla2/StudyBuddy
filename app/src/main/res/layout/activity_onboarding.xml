@@ -66,6 +66,15 @@
                     android:text="Button"
                     android:textColor="#6750A4"
                     android:backgroundTint="#E4DFF9"/>
+
+                <!--Debug Button-->
+<!--                <Button-->
+<!--                    android:id="@+id/buttonDebug"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ButtonDebug"-->
+<!--                    android:textColor="#6750A4"-->
+<!--                    android:backgroundTint="#E4DFF9"/>-->
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
