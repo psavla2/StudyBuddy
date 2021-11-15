@@ -1,12 +1,29 @@
 package edu.illinois.cs465.studybuddy;
 
-import java.util.List;
+import androidx.annotation.NonNull;
+
+import java.util.Set;
 
 public class StudySpace {
     int id;
+    String maps_id;
     String name;
+    String short_name;
     String description;
-    double latitude;
-    double longitude;
-    List<Integer> tags;
+    Set<Integer> tags;
+    String website;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "StudySpace{" +
+                "id=" + id +
+                ", maps_id='" + maps_id + '\'' +
+                ", name='" + name + '\'' +
+                ", short_name='" + short_name + '\'' +
+                ", description='" + description + '\'' +
+                ", tags=" + tags +
+                ", website='" + website + '\'' +
+                '}';
+    }
 }
