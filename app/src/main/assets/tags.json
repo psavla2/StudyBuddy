@@ -1,42 +1,69 @@
 [
   {
     "id": 1,
-    "tag": "Quiet"
-  },
-  {
-    "id": 2,
-    "tag": "Food"
-  },
-  {
-    "id": 3,
-    "tag": "Natural light"
-  },
-  {
-    "id": 4,
-    "tag": "Tag number 4"
-  },
-  {
-    "id": 5,
-    "tag": "Tag longer name 5"
-  },
-  {
-    "id": 6,
-    "tag": "Tag even longest name 6"
-  },
-  {
-    "id": 7,
-    "tag": "Tag 7"
-  },
-  {
-    "id": 8,
-    "tag": "Tag Long name 8"
-  },
-  {
-    "id": 9,
-    "tag": "Tag filler 9"
-  },
-  {
-    "id": 10,
-    "tag": "Tag ten"
-  }
+    "tag": "Natural Light"
+  },{
+  "id": 2,
+  "tag": "Eats"
+},{
+  "id": 3,
+  "tag": "Music"
+},{
+  "id": 4,
+  "tag": "Meeting Rooms"
+},{
+  "id": 5,
+  "tag": "Group Seating"
+},{
+  "id": 6,
+  "tag": "University Wifi"
+},{
+  "id": 7,
+  "tag": "Quiet Spaces"
+},{
+  "id": 8,
+  "tag": "Charging Stations"
+},{
+  "id": 9,
+  "tag": "Cubicles"
+},{
+  "id": 10,
+  "tag": "Free Parking"
+},{
+  "id": 11,
+  "tag": "Coffee"
+},{
+  "id": 12,
+  "tag": "Nearby Bus Stop"
+},{
+  "id": 13,
+  "tag": "Outdoor Seating"
+},{
+  "id": 14,
+  "tag": "Recreational Amenities"
+},{
+  "id": 15,
+  "tag": "Metered Parking"
+},{
+  "id": 16,
+  "tag": "Room Reservation"
+},{
+  "id": 17,
+  "tag": "Computer Lab"
+},{
+  "id": 18,
+  "tag": "Classrooms"
+},{
+  "id": 19,
+  "tag": "Loanable Technology"
+},{
+  "id": 20,
+  "tag": "Printing"
+},{
+  "id": 21,
+  "tag": "Library"
+},{
+  "id": 22,
+  "tag": "Free Wifi"
+}
 ]

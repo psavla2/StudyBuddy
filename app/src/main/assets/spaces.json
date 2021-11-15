@@ -1,18 +1,162 @@
 [
   {
-    "id": 1,
-    "name": "Grainger Engineering Library",
-    "description": "Grainger Lorem Grainger ipsum Grainger dolor sit amet, consectetur adipiscing elit. Mauris facilisis volutpat rutrum. Ut facilisis, quam at posuere rhoncus, purus augue vehicula dolor, eu convallis nibh mi pellentesque lacus. Nulla et velit eget nunc auctor hendrerit. Sed ac est posuere, suscipit dolor in, pharetra augue. Nulla sed magna id neque vulputate ullamcorper.",
-    "latitude": 40.112355,
-    "longitude": -88.226875,
-    "tags": [ 1, 3, 4, 5, 7 ]
+    "id": 7,
+    "maps_id": "ChIJq3dgmhDXDIgRyCQxatZeJBw",
+    "name": "Stanley Illini Grove",
+    "short_name": "Illini Grove",
+    "description": "Picnic tables available to pick up a book and get some reading in.",
+    "tags": [
+      1,
+      5,
+      12,
+      13,
+      14
+    ],
+    "website": "https://campusrec.illinois.edu/facilities/illini-grove/"
   },
   {
-    "id": 2,
+    "id": 11,
+    "maps_id": "ChIJwR71sBfXDIgRv9mtjD_0x14",
     "name": "ACES Library",
-    "description": "ACES Lorem ACES ipsum ACES dolor sit amet, consectetur adipiscing elit. Mauris facilisis volutpat rutrum. Ut facilisis, quam at posuere rhoncus, purus augue vehicula dolor, eu convallis nibh mi pellentesque lacus. Nulla et velit eget nunc auctor hendrerit. Sed ac est posuere, suscipit dolor in, pharetra augue. Nulla sed magna id neque vulputate ullamcorper.",
-    "latitude": 40.103022,
-    "longitude": -88.225122,
-    "tags": [ 1, 2, 5, 6 ]
+    "short_name": "ACES Library",
+    "description": "Library with classrooms to study on your own or with a small group.",
+    "tags": [
+      5,
+      6,
+      8,
+      9,
+      12,
+      15,
+      16,
+      17,
+      19,
+      20
+    ],
+    "website": "http://www.library.illinois.edu/funkaces/"
+  },
+  {
+    "id": 38,
+    "maps_id": "ChIJk-StWQzXDIgRNzKIHPOND7g",
+    "name": "George Huff Hall",
+    "short_name": "Huff",
+    "description": "Multi-use facility with a gymnasium. South of the Armory.",
+    "tags": [
+      6,
+      8,
+      12,
+      15,
+      18
+    ],
+    "website": "https://fightingillini.com/facilities/huff-hall-gymnastics-volleyball-wrestling/11"
+  },
+  {
+    "id": 43,
+    "maps_id": "ChIJ51_2pz3XDIgRm_U3cL9O62k",
+    "name": "David Kinley Hall",
+    "short_name": "David Kinley",
+    "description": "Once known as The Commerce Building, this location has many classrooms and lecture halls to sit in.",
+    "tags": [
+      6,
+      8,
+      12,
+      15,
+      18
+    ],
+    "website": "http://ada.fs.illinois.edu/0054PLAN1.html"
+  },
+  {
+    "id": 65,
+    "maps_id": "ChIJyYXA3KLXDIgRizSDBgHhBMA",
+    "name": "Lincoln Hall",
+    "short_name": "Lincoln",
+    "description": "Lincoln Hall contains four floors which includes classrooms, a theater, conference rooms, and offices for faculty.",
+    "tags": [
+      6,
+      8,
+      12,
+      13,
+      15,
+      18
+    ],
+    "website": "https://foellinger.illinois.edu/lincoln-hall-theater/"
+  },
+  {
+    "id": 86,
+    "maps_id": "ChIJZ9trgBHXDIgR3KFYrAKfvGI",
+    "name": "Caffe Paradiso",
+    "short_name": "Paradiso",
+    "description": "A cozy coffee shop on Lincoln Ave with tables to work at",
+    "tags": [
+      2,
+      5,
+      8,
+      11,
+      12,
+      13,
+      22
+    ],
+    "website": "http://www.enjoyparadiso.com/"
+  },
+  {
+    "id": 97,
+    "maps_id": "ChIJ-b_t9hXXDIgR2SIIkBGBBro",
+    "name": "Davenport Hall",
+    "short_name": "Davenport",
+    "description": "Located by the quad, many classrooms to study in.",
+    "tags": [
+      6,
+      13,
+      18
+    ],
+    "website": "http://ada.fs.illinois.edu/0001.html"
+  },
+  {
+    "id": 143,
+    "maps_id": "ChIJccMLBUDXDIgRoVgxhCMQ5jY",
+    "name": "Bardeen Quadrangle",
+    "short_name": "Bardeen",
+    "description": "Pleasant view with boneyard creek going through it and some outdoor seating.",
+    "tags": [
+      6,
+      13
+    ],
+    "website": "https://uihistories.library.illinois.edu/virtualtour/engineering/bardeenquad/"
+  },
+  {
+    "id": 145,
+    "maps_id": "ChIJtViDlmrXDIgRwp5DMl59fK4",
+    "name": "Grainger Engineering Library",
+    "short_name": "Grainger",
+    "description": "Library with solo study spaces and group ones too. Has a cafe and you can rent a charger here.",
+    "tags": [
+      2,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21
+    ],
+    "website": "https://www.library.illinois.edu/enx/"
+  },
+  {
+    "id": 157,
+    "maps_id": "ChIJM-RtnWrXDIgRRP-cVNJU2Lo",
+    "name": "Digital Computer Laboratory",
+    "short_name": "DCL",
+    "description": "This relatively cozy building has some tables and benches in the basement to study at.",
+    "tags": [
+      6,
+      17,
+      18
+    ],
+    "website": "http://ada.fs.illinois.edu/0210.html"
   }
 ]
