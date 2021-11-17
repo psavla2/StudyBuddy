@@ -16,7 +16,7 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page2);
 
-        ChipGroup filters = findViewById(R.id.onboarding_chips);
+        ChipGroup filters = findViewById(R.id.home_page_chips);
         Tag[] tags = JsonReader.getTags(this);
         LayoutInflater inflater = LayoutInflater.from(this);
 
