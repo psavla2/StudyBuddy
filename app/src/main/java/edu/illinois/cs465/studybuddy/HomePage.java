@@ -7,8 +7,7 @@ import android.view.LayoutInflater;
 
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
-
-import java.util.HashSet;
+import com.wajahatkarim3.easyflipview.EasyFlipView;
 
 public class HomePage extends AppCompatActivity {
 

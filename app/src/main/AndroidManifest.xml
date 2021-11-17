@@ -40,6 +40,11 @@
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HomePage"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>
