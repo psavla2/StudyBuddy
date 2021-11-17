@@ -59,17 +59,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         MyViewHolder vh = new MyViewHolder(view);
 
-        vh.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                int position = vh.getAdapterPosition();
-                LocationItem location = locationItemList.get(position);
-                Log.d("Recycler onClick", String.format("Opening location with name: %s", location.getName()));
-//                Intent intent = new Intent(this, ____.class);
-//                intent.putExtra("name", location.getName());
-//                intent.putExtra("description", location.getDescription());
-//                mContext.startActivity(intent);
-            }
+        vh.itemView.setOnClickListener(v -> {
+            int position = vh.getAdapterPosition();
+            StudySpace space = locationItemList.get(position).getStudySpace();
+            Log.d("Recycler onClick", String.format("Opening location with name: %s", space.name));
+            Intent intent = new Intent(view.getContext(), LocationPageActivity.class);
+            intent.putExtra("name", space.name);
+            intent.putExtra("description", space.description);
+            intent.putExtra("tags", space.tags.toArray());
+            intent.putExtra("maps_id", space.maps_id);
+            intent.putExtra("website", space.website);
+            mContext.startActivity(intent);
         });
 
         // Return a new view holder
