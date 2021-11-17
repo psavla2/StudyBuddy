@@ -50,7 +50,7 @@ public class FilterSearchActivity extends AppCompatActivity {
         for (StudySpace s : studySpaceArray) {
             mSpacesMap.put(s.id, s);
             mMatchingTags.put(s.id, 0);
-            mSortedSpacesList.add(new LocationItem(s.name, s.description, s.id));
+            mSortedSpacesList.add(new LocationItem(s));
         }
 
         mRecyclerView = findViewById(R.id.recycler_view);

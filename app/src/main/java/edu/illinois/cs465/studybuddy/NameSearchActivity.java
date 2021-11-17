@@ -45,7 +45,7 @@ public class NameSearchActivity extends AppCompatActivity {
         for (StudySpace s : studySpaceArray) {
             mSpacesMap.put(s.id, s);
             mQueryScores.put(s.id, 0);
-            mSortedSpacesList.add(new LocationItem(s.name, s.description, s.id));
+            mSortedSpacesList.add(new LocationItem(s));
         }
 
         mSearchField.addTextChangedListener(new TextWatcher() {

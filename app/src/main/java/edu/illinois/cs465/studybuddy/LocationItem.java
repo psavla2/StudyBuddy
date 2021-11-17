@@ -5,15 +5,11 @@ import java.util.Locale;
 
 public class LocationItem {
     private int imageDrawable;
-    private String name;
-    private String description;
-    private int id;
+    private StudySpace space;
 
-    public LocationItem(String title, String subtitle, int id) {
+    public LocationItem(StudySpace space) {
         imageDrawable = R.drawable.elcap;
-        name = title;
-        description = subtitle;
-        this.id = id;
+        this.space = space;
     }
 
     public int getImageDrawable() {
@@ -21,14 +17,18 @@ public class LocationItem {
     }
 
     public String getName() {
-        return name;
+        return space.name;
     }
 
     public String getDescription() {
-        return description;
+        return space.description;
     }
 
     public int getId() {
-        return id;
+        return space.id;
+    }
+
+    public StudySpace getStudySpace() {
+        return space;
     }
 }
