@@ -1,8 +1,12 @@
 package edu.illinois.cs465.studybuddy;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,8 +56,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         // Inflate out card list item
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_item, parent, false);
+
+        MyViewHolder vh = new MyViewHolder(view);
+
+        vh.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                int position = vh.getAdapterPosition();
+                LocationItem location = locationItemList.get(position);
+                Log.d("Recycler onClick", String.format("Opening location with name: %s", location.getName()));
+//                Intent intent = new Intent(this, ____.class);
+//                intent.putExtra("name", location.getName());
+//                intent.putExtra("description", location.getDescription());
+//                mContext.startActivity(intent);
+            }
+        });
+
         // Return a new view holder
-        return new MyViewHolder(view);
+        return vh;
     }
 
     @Override
