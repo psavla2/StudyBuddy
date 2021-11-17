@@ -26,7 +26,7 @@
             android:text="@string/onboarding_question"
             android:textAlignment="center"
             android:textSize="30dp"
-            android:layout_marginTop="100dp"/>
+            android:layout_marginTop="60dp"/>
 
         <TextView
             android:id="@+id/textView5"
@@ -45,12 +45,17 @@
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="370dp">
+
+
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/onboarding_chips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="50dp"/>
-
+            </ScrollView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -68,13 +73,13 @@
                     android:backgroundTint="#E4DFF9"/>
 
                 <!--Debug Button-->
-<!--                <Button-->
-<!--                    android:id="@+id/buttonDebug"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="ButtonDebug"-->
-<!--                    android:textColor="#6750A4"-->
-<!--                    android:backgroundTint="#E4DFF9"/>-->
+                <Button
+                    android:id="@+id/buttonDebug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ButtonDebug"
+                    android:textColor="#6750A4"
+                    android:backgroundTint="#E4DFF9"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

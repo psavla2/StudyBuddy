@@ -2,6 +2,7 @@ package edu.illinois.cs465.studybuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -61,18 +62,25 @@ public class Onboarding extends AppCompatActivity {
                 SharedPreferences.Editor editor = myPrefs.edit();
                 editor.putString("forYou", json);
                 editor.apply();
+                editor.commit();
+                startMain();
             }
         });
 
         //Debug Button
-//        btnDebug = findViewById(R.id.buttonDebug);
-//        btnDebug.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                String s = myPrefs.getString("forYou", "");
-//                Log.d("findTheForYou", s);
-//            }
-//        });
+        btnDebug = findViewById(R.id.buttonDebug);
+        btnDebug.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s = myPrefs.getString("forYou", "");
+                Log.d("findTheForYou", s);
+            }
+        });
 
+    }
+
+    private void startMain() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
