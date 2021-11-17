@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,11 +20,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 public class FilterSearchActivity extends AppCompatActivity {
 
     private HashMap<Integer, StudySpace> mSpacesMap; // location ID -> StudySpace
-    private List<Integer> mSortedSpacesList;
+    private List<LocationItem> mSortedSpacesList;
     private HashMap<Integer, Integer> mMatchingTags; // location ID -> number of matching tags
     private HashSet<Integer> mSelectedTags;
 
@@ -47,7 +50,7 @@ public class FilterSearchActivity extends AppCompatActivity {
         for (StudySpace s : studySpaceArray) {
             mSpacesMap.put(s.id, s);
             mMatchingTags.put(s.id, 0);
-            mSortedSpacesList.add(s.id);
+            mSortedSpacesList.add(new LocationItem(s.name, s.description, s.id));
         }
 
         mRecyclerView = findViewById(R.id.recycler_view);
@@ -67,16 +70,6 @@ public class FilterSearchActivity extends AppCompatActivity {
     }
 
     private void UpdateRecycler() {
-        List<LocationItem> locationItemList = new ArrayList<>();
-        for (Integer spaceId : mSortedSpacesList) {
-            Integer matchingTags = mMatchingTags.get(spaceId);
-            if (matchingTags == null || matchingTags == 0) break;
-            StudySpace space = mSpacesMap.get(spaceId);
-            if (space != null) {
-                locationItemList.add(new LocationItem(space.name, space.description));
-            }
-        }
-
         mRecyclerView.setHasFixedSize(true);
 
         // use a linear layout manager
@@ -86,13 +79,13 @@ public class FilterSearchActivity extends AppCompatActivity {
 
         // specify an adapter and pass in our locationItemList
 
-        mAdapter = new MyAdapter(locationItemList, this);
+        mAdapter = new MyAdapter(mSortedSpacesList, this);
         mRecyclerView.setAdapter(mAdapter);
     }
 
-    private int CompareSpacesMatchingTags(Integer aId, Integer bId) {
-        Integer matchingA = mMatchingTags.get(aId);
-        Integer matchingB = mMatchingTags.get(bId);
+    private int CompareLocationItems(LocationItem a, LocationItem b) {
+        Integer matchingA = mMatchingTags.get(a.getId());
+        Integer matchingB = mMatchingTags.get(b.getId());
         matchingA = matchingA == null ? 0 : matchingA;
         matchingB = matchingB == null ? 0 : matchingB;
         return -1 * matchingA.compareTo(matchingB); // -1 indicates reverse order
@@ -112,7 +105,7 @@ public class FilterSearchActivity extends AppCompatActivity {
             }
         }
 
-        Collections.sort(mSortedSpacesList, this::CompareSpacesMatchingTags);
+        Collections.sort(mSortedSpacesList, this::CompareLocationItems);
         UpdateRecycler();
     }
 
@@ -132,7 +125,7 @@ public class FilterSearchActivity extends AppCompatActivity {
             }
         }
 
-        Collections.sort(mSortedSpacesList, this::CompareSpacesMatchingTags);
+        Collections.sort(mSortedSpacesList, this::CompareLocationItems);
         UpdateRecycler();
     }
 }

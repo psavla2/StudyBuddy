@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyBuddy">
         <activity
+            android:name=".NameSearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".Onboarding"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

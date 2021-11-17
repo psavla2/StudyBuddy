@@ -9,21 +9,26 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button filterButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        filterButton = (Button)findViewById(R.id.filter_button);
+        Button filterButton = (Button)findViewById(R.id.filter_button);
         filterButton.setOnClickListener(v -> StartFilterSearch());
+
+        Button searchButton = (Button)findViewById(R.id.name_search_button);
+        searchButton.setOnClickListener(v -> StartSearchByName());
     }
 
     private void StartFilterSearch() {
         Intent intent = new Intent(this, FilterSearchActivity.class);
+        intent.putExtra("filter_tags", new Integer[] { 2, 3, 5 });
         startActivity(intent);
     }
 
-
+    private void StartSearchByName() {
+        Intent intent = new Intent(this, NameSearchActivity.class);
+        startActivity(intent);
+    }
 }

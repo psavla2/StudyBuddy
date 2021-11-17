@@ -16,4 +16,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="onboarding_question"> What do you like?</string>
     <string name="onboarding_description">Select 3 filters to customize your \'For You\' playlist on the home page.</string>
+    <string name="search_by_name">Search by name</string>
 </resources>
