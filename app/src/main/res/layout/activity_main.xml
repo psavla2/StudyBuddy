@@ -19,7 +19,7 @@
         android:text="@string/filter_search_button">
     </com.google.android.material.button.MaterialButton>
         
-        //reset the onboarding set, for debug or test
+<!--         reset the onboarding set, for debug or test -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/reset_button"
             android:layout_width="wrap_content"
