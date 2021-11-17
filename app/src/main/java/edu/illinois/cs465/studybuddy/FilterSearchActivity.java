@@ -1,5 +1,6 @@
 package edu.illinois.cs465.studybuddy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -51,20 +52,25 @@ public class FilterSearchActivity extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.recycler_view);
 
+        AddStartingTags();
+
         LayoutInflater inflater = LayoutInflater.from(this);
 
         for (Tag t : tags) {
             Chip chip = (Chip)inflater.inflate(R.layout.space_filter_chip, filters, false);
             chip.setId(t.id);
             chip.setText(t.tag);
+            chip.setChecked(mSelectedTags.contains(t.id));
             chip.setOnCheckedChangeListener((buttonView, isChecked) -> ChangeTag(buttonView.getId(), isChecked));
             filters.addView(chip);
         }
     }
 
-    private void UpdateRecycler(List<Integer> idsToDisplay) {
+    private void UpdateRecycler() {
         List<LocationItem> locationItemList = new ArrayList<>();
-        for (Integer spaceId : idsToDisplay) {
+        for (Integer spaceId : mSortedSpacesList) {
+            Integer matchingTags = mMatchingTags.get(spaceId);
+            if (matchingTags == null || matchingTags == 0) break;
             StudySpace space = mSpacesMap.get(spaceId);
             if (space != null) {
                 locationItemList.add(new LocationItem(space.name, space.description));
@@ -84,6 +90,14 @@ public class FilterSearchActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
     }
 
+    private int CompareSpacesMatchingTags(Integer aId, Integer bId) {
+        Integer matchingA = mMatchingTags.get(aId);
+        Integer matchingB = mMatchingTags.get(bId);
+        matchingA = matchingA == null ? 0 : matchingA;
+        matchingB = matchingB == null ? 0 : matchingB;
+        return -1 * matchingA.compareTo(matchingB); // -1 indicates reverse order
+    }
+
     private void ChangeTag(int tagId, boolean added) {
         boolean tagsChanged = added ? mSelectedTags.add(tagId) : mSelectedTags.remove(tagId);
         if (tagsChanged) {
@@ -98,22 +112,27 @@ public class FilterSearchActivity extends AppCompatActivity {
             }
         }
 
-        Collections.sort(mSortedSpacesList, (a, b) -> {
-            Integer matchingA = mMatchingTags.get(a);
-            Integer matchingB = mMatchingTags.get(b);
-            matchingA = matchingA == null ? 0 : matchingA;
-            matchingB = matchingB == null ? 0 : matchingB;
-            return -1 * matchingA.compareTo(matchingB); // -1 indicates reverse order
-        });
+        Collections.sort(mSortedSpacesList, this::CompareSpacesMatchingTags);
+        UpdateRecycler();
+    }
 
-        ArrayList<Integer> toDisplay = new ArrayList<>(mSortedSpacesList.size());
+    private void AddStartingTags() {
+        Intent i = getIntent();
+        Bundle extrasBundle = i.getExtras();
+        Integer[] filterTags = (extrasBundle == null) ? null : (Integer[]) extrasBundle.get("filter_tags");
 
-        for (Integer spaceId : mSortedSpacesList) {
-            Integer matchingTags = mMatchingTags.get(spaceId);
-            if (matchingTags == null || matchingTags == 0) break;
-            toDisplay.add(spaceId);
+        if (filterTags == null) return;
+
+        for (Integer filterTag : filterTags) {
+            mSelectedTags.add(filterTag);
+            for (StudySpace s : mSpacesMap.values()) {
+                Integer alreadyMatching = mMatchingTags.get(s.id);
+                if (alreadyMatching == null) alreadyMatching = 0;
+                if (s.tags.contains(filterTag)) mMatchingTags.put(s.id, alreadyMatching + 1);
+            }
         }
 
-        UpdateRecycler(toDisplay);
+        Collections.sort(mSortedSpacesList, this::CompareSpacesMatchingTags);
+        UpdateRecycler();
     }
 }
