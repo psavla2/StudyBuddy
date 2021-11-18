@@ -40,7 +40,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         }
 
         public void bindData(LocationItem dataModel, Context context) {
-//            cardImageView.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.list_image));
+            if (dataModel.getImageId() != null) {
+                int drawableId = context.getResources().getIdentifier(dataModel.getImageId(),
+                        "drawable", context.getPackageName());
+                Log.d("location image id", Integer.toString(drawableId));
+                Log.d("identifier", dataModel.getImageId());
+
+                if (drawableId == 0) drawableId = R.drawable.elcap;
+                Drawable locationImage = ContextCompat.getDrawable(context, drawableId);
+                cardImageView.setImageDrawable(locationImage);
+            }
+
             nameTextView.setText(dataModel.getName());
             descriptionTextView.setText(dataModel.getDescription());
         }
@@ -57,7 +67,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Inflate out card list item
-        View view = LayoutInflater.from(parent.getContext())
+        Context ctx = parent.getContext();
+        View view = LayoutInflater.from(ctx)
                 .inflate(R.layout.list_item, parent, false);
 
         MyViewHolder vh = new MyViewHolder(view);
@@ -66,12 +77,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             int position = vh.getAdapterPosition();
             StudySpace space = locationItemList.get(position).getStudySpace();
             Log.d("Recycler onClick", String.format("Opening location with name: %s", space.name));
-            Intent intent = new Intent(view.getContext(), LocationPageActivity.class);
+            Intent intent = new Intent(ctx, LocationPageActivity.class);
             intent.putExtra("name", space.name);
             intent.putExtra("description", space.description);
             intent.putExtra("tags", space.tags.toArray(new Integer[space.tags.size()]));
             intent.putExtra("maps_id", space.maps_id);
             intent.putExtra("website", space.website);
+            intent.putExtra("image_id", space.image_id);
             mContext.startActivity(intent);
         });
 
