@@ -38,4 +38,8 @@ public class JsonReader {
         return new Gson().fromJson(jsonData, Tag[].class);
     }
 
+    public static Playlist[] getPlaylists(Context ctx) {
+        String jsonData = getJson("playlists.json", ctx);
+        return new Gson().fromJson(jsonData, Playlist[].class);
+    }
 }
