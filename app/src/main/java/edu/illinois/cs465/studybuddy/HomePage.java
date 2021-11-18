@@ -38,10 +38,10 @@ public class HomePage extends AppCompatActivity {
         Set<Integer> onboardingSet = gson.fromJson(s, setType);
 
         for (Tag t : tags) {
-            if (!onboardingSet.contains(t.id)) continue;
             Chip chip = (Chip)inflater.inflate(R.layout.space_filter_chip, filters, false);
             chip.setId(t.id);
             chip.setText(t.tag);
+            if (!onboardingSet.contains(t.id)) continue;
             filters.addView(chip);
         }
 
