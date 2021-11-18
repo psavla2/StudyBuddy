@@ -94,29 +94,17 @@ public class LocationPageActivity extends AppCompatActivity {
 
         for (Tag t : tags) {
             if (mSelectedTags.contains(t.id)) {
-                Chip chip = (Chip) inflater.inflate(R.layout.space_filter_chip, filters, false);
+                Chip chip = (Chip) inflater.inflate(R.layout.space_filter_chip_uncheck, filters, false);
                 chip.setId(t.id);
                 chip.setText(t.tag);
-                chip.setChecked(mSelectedTags.contains(t.id));
+                //chip.setChecked(mSelectedTags.contains(t.id));
                 filters.addView(chip);
             }
         }
     }
 
 
-    private int CompareLocationItems(LocationItem a, LocationItem b) {
-        Integer matchingA = mMatchingTags.get(a.getId());
-        Integer matchingB = mMatchingTags.get(b.getId());
-        matchingA = matchingA == null ? 0 : matchingA;
-        matchingB = matchingB == null ? 0 : matchingB;
-        return -1 * matchingA.compareTo(matchingB); // -1 indicates reverse order
-    }
-
     private void AddStartingTags(Integer [] filterTags) {
-        //Intent i = getIntent();
-        //Bundle extrasBundle = i.getExtras();
-        //Integer[] filterTags = (extrasBundle == null) ? null : (Integer[]) extrasBundle.get("filter_tags");
-        //System.out.println(filterTags);
         if (filterTags == null) return;
 
         for (Integer filterTag : filterTags) {
@@ -127,7 +115,5 @@ public class LocationPageActivity extends AppCompatActivity {
                 if (s.tags.contains(filterTag)) mMatchingTags.put(s.id, alreadyMatching + 1);
             }
         }
-
-        Collections.sort(mSortedSpacesList, this::CompareLocationItems);
     }
 }
