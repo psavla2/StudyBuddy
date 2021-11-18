@@ -50,46 +50,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
-/*
-public class LocationPageActivity extends AppCompatActivity{
 
-    private TextView signal;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location);
-
-        //signal = findViewById(R.id.signal);
-
-        ChipGroup filters = findViewById(R.id.filters_chip_group);
-        Tag[] tags = JsonReader.getTags(this);
-
-        for (Tag t : tags) {
-            Chip chip = new Chip(new ContextThemeWrapper(this, R.style.Widget_Material3_Chip_Filter));
-            chip.setCheckable(true);
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT);
-            layoutParams.setMargins(0, 0, 0, 0);
-            chip.setLayoutParams(layoutParams);
-            chip.setId(t.id);
-            chip.setText(t.tag);
-            chip.setOnCheckedChangeListener((buttonView, isChecked) -> {
-                CharSequence newText;
-                if (isChecked) {
-                    newText = String.format(Locale.US, "Checked tag with id: %d", buttonView.getId());
-                } else {
-                    newText = String.format(Locale.US, "Unchecked tag with id: %d", buttonView.getId());
-                }
-                //signal.setText(newText);
-            });
-            filters.addView(chip);
-        }
-    }
-
-}
-
-*/
 public class LocationPageActivity extends AppCompatActivity {
 
     private HashMap<Integer, StudySpace> mSpacesMap; // location ID -> StudySpace
@@ -103,6 +64,7 @@ public class LocationPageActivity extends AppCompatActivity {
         Intent i = getIntent();
         Bundle extrasBundle = i.getExtras();
         setContentView(R.layout.activity_location);
+        Integer[] filterTags = (extrasBundle == null) ? null : (Integer[]) extrasBundle.get("tags");
         String name = (extrasBundle == null) ? null : (String) extrasBundle.get("name");
         TextView tv = (TextView) findViewById(R.id.textView19);
         tv.setText(name);
@@ -126,7 +88,7 @@ public class LocationPageActivity extends AppCompatActivity {
             mSortedSpacesList.add(new LocationItem(s));
         }
 
-        AddStartingTags();
+        AddStartingTags(filterTags);
 
         LayoutInflater inflater = LayoutInflater.from(this);
 
@@ -150,11 +112,11 @@ public class LocationPageActivity extends AppCompatActivity {
         return -1 * matchingA.compareTo(matchingB); // -1 indicates reverse order
     }
 
-    private void AddStartingTags() {
-        Intent i = getIntent();
-        Bundle extrasBundle = i.getExtras();
-        Integer[] filterTags = (extrasBundle == null) ? null : (Integer[]) extrasBundle.get("filter_tags");
-
+    private void AddStartingTags(Integer [] filterTags) {
+        //Intent i = getIntent();
+        //Bundle extrasBundle = i.getExtras();
+        //Integer[] filterTags = (extrasBundle == null) ? null : (Integer[]) extrasBundle.get("filter_tags");
+        //System.out.println(filterTags);
         if (filterTags == null) return;
 
         for (Integer filterTag : filterTags) {

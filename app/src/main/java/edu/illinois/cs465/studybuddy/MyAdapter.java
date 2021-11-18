@@ -1,11 +1,13 @@
 package edu.illinois.cs465.studybuddy;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,6 +52,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -66,7 +69,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             Intent intent = new Intent(view.getContext(), LocationPageActivity.class);
             intent.putExtra("name", space.name);
             intent.putExtra("description", space.description);
-            intent.putExtra("tags", space.tags.toArray());
+            intent.putExtra("tags", space.tags.toArray(new Integer[space.tags.size()]));
             intent.putExtra("maps_id", space.maps_id);
             intent.putExtra("website", space.website);
             mContext.startActivity(intent);
