@@ -31,22 +31,22 @@ public class MainActivity extends AppCompatActivity {
             //go to the main to see the several activities we have
             // redirect to the home_page
             startHomePage();
+            //after we go the the home_page, the main_activity page finish its job, so, we don't need the filter, onboarding reset, sarch button in mainPage
 
+//             setContentView(R.layout.activity_main);
+//             filter
+//             filterButton = (Button)findViewById(R.id.filter_button);
+//             filterButton.setOnClickListener(v -> StartFilterSearch());
 
-            setContentView(R.layout.activity_main);
-            // filter
-            filterButton = (Button)findViewById(R.id.filter_button);
-            filterButton.setOnClickListener(v -> StartFilterSearch());
+//             reset the onboarding set
+//             resetButton = (Button)findViewById(R.id.reset_button);
+//             resetButton.setOnClickListener(v -> resetOnboardingSet());
 
-            //reset the onboarding set
-            resetButton = (Button)findViewById(R.id.reset_button);
-            resetButton.setOnClickListener(v -> resetOnboardingSet());
+//             search name
+//             nameSearchButton = (Button)findViewById(R.id.name_search_button);
+//             nameSearchButton.setOnClickListener(v -> StartSearchByName());
 
-            //search name
-            nameSearchButton = (Button)findViewById(R.id.name_search_button);
-            nameSearchButton.setOnClickListener(v -> StartSearchByName());
-
-            //home page
+//             home page
 //            homePageButton = (Button)findViewById(R.id.home_page_button);
 //            homePageButton.setOnClickListener(v -> startHomePage());
         }
