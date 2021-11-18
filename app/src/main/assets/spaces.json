@@ -5,9 +5,15 @@
     "name": "Stanley Illini Grove",
     "short_name": "Illini Grove",
     "description": "Picnic tables available to pick up a book and get some reading in.",
-    "tags": [1, 5, 12, 13, 14],
+    "tags": [
+      1,
+      5,
+      12,
+      13,
+      14
+    ],
     "website": "https://campusrec.illinois.edu/facilities/illini-grove/",
-    "image_id": "image_item2"
+    "image_id": "illini_grove_1"
   },
   {
     "id": 11,
@@ -15,45 +21,20 @@
     "name": "ACES Library",
     "short_name": "ACES Library",
     "description": "Library with classrooms to study on your own or with a small group.",
-    "tags": [5, 6, 8, 9, 12, 15, 16, 17, 19, 20],
-    "website": "http://www.library.illinois.edu/funkaces/"
-  },
-  {
-    "id": 19,
-    "maps_id": "ChIJVZTcqiTXDIgRixTfOYpAOQg",
-    "name": "University of Illinois College of Law",
-    "short_name": "Law Building",
-    "description": "An extremely quiet area scattered with tables for independent study.",
-    "tags" : [6, 7, 12, 16, 21],
-    "website": "https://law.illinois.edu/academics/library/"
-  },
-  {
-    "id": 23,
-    "maps_id": "ChIJXQMDUA_XDIgRCMznJSyf--c",
-    "name": "Siebel Center for Design",
-    "short_name": "SCD",
-    "description": "A uniquely designed building with whiteboards on almost every wall. Areas for both group and individual study.",
-    "tags" : [1, 4, 5, 6, 7, 8, 9, 18],
-    "website": "https://designcenter.illinois.edu/"
-  },
-  {
-    "id": 24,
-    "maps_id": "ChIJu-iLrDrXDIgRttGoUNxRUgc",
-    "name": "University of Illinois Activities and Recreation Center",
-    "short_name": "ARC",
-    "description": "Classrooms and tables available to study within UIUC's largest recreation center.",
-    "tags" : [4, 6, 12, 14, 15, 16],
-    "website": "https://campusrec.illinois.edu/facilities/activities-and-recreation-center-arc/"
-  },
-
-  {
-    "id": 32,
-    "maps_id": "ChIJeUz7YTrXDIgRC0QtdLZNcOc",
-    "name": "Ikenberry Student Dining and Residential Programs Building",
-    "short_name": "IKE",
-    "description": "Large student center with casual seating all around, as well as quieter and focused spots upstairs.",
-    "tags" : [2, 3, 4, 5, 6, 7, 8, 11, 12, 14, 16, 17, 18, 20, 21],
-    "website": "https://housing.illinois.edu/aboutus/sdrp"
+    "tags": [
+      5,
+      6,
+      8,
+      9,
+      12,
+      15,
+      16,
+      17,
+      19,
+      20
+    ],
+    "website": "http://www.library.illinois.edu/funkaces/",
+    "image_id": "aces_library_1"
   },
   {
     "id": 38,
@@ -61,17 +42,15 @@
     "name": "George Huff Hall",
     "short_name": "Huff",
     "description": "Multi-use facility with a gymnasium. South of the Armory.",
-    "tags": [6, 8, 12, 15, 18],
-    "website": "https://fightingillini.com/facilities/huff-hall-gymnastics-volleyball-wrestling/11"
-  },
-  {
-    "id": 39,
-    "maps_id": "ChIJBe2qxP3XDIgRV5W_-SsuPrM",
-    "name": "Business Instructional Facility",
-    "short_name": "BIF",
-    "description": "Main building for Business students and resources, filled with classrooms and tables for group study.",
-    "tags": [1, 5, 6, 7, 11, 15, 18],
-    "website": "https://giesbusiness.illinois.edu/our-story/facilities"
+    "tags": [
+      6,
+      8,
+      12,
+      15,
+      18
+    ],
+    "website": "https://fightingillini.com/facilities/huff-hall-gymnastics-volleyball-wrestling/11",
+    "image_id": "gregory_huff_hall"
   },
   {
     "id": 43,
@@ -79,62 +58,15 @@
     "name": "David Kinley Hall",
     "short_name": "David Kinley",
     "description": "Once known as The Commerce Building, this location has many classrooms and lecture halls to sit in.",
-    "tags": [6, 8, 12, 15, 18],
-    "website": "http://ada.fs.illinois.edu/0054PLAN1.html"
-  },
-  {
-    "id": 49,
-    "maps_id": "ChIJH26PaxHXDIgRC-omrwv-rVs",
-    "name": "Campus Recreation Center East",
-    "short_name": "CRCE",
-    "description": "Small amount of seating and tables scattered around UIUC's second largest recreation center.",
-    "tags": [6, 12, 14],
-    "website": "https://campusrec.illinois.edu/facilities/campus-recreation-center-east-crce/"
-  },
-  {
-    "id": 53,
-    "maps_id": "ChIJbcxsjT3XDIgRrjTeNpUyYIY",
-    "name": "Undergraduate Library",
-    "short_name": "UGL",
-    "description": "This university library has 2 floors, the lowest commonly regarded as the quiet area. Many different areas to sit down or reserve in advance.",
-    "tags": [2, 5, 6, 7, 8, 9, 16, 17, 19, 20, 21],
-    "website": "https://www.library.illinois.edu/ugl/"
-  },
-  {
-    "id": 54,
-    "maps_id": "ChIJa_UstD3XDIgRZUlIgRXSgeo",
-    "name": "Main Library",
-    "short_name": "Main Library",
-    "description": "Includes a number of specialized libraries as well as quiet study rooms and seating.",
-    "tags": [6, 7, 21],
-    "website": "https://www.library.illinois.edu/"
-  },
-  {
-    "id": 55,
-    "maps_id": "ChIJFwJwvjvXDIgReBmVK2_VIQs",
-    "name": "University of Illinois Armory",
-    "short_name": "Armory",
-    "description": "Unique spot that is home to the ROTC offices. Offers a large array of classrooms to study in, if you can navigate the maze...",
-    "tags": [5, 6, 12, 18],
-    "website": "https://fightingillini.com/facilities/ui-armory/5"
-  },
-  {
-    "id": 62,
-    "maps_id": "ChIJqVBsJzzXDIgRnIFTmkSiVWw",
-    "name": "St. John's Catholic Newman Center",
-    "short_name": "Newman",
-    "description": "Private housing location with rooms available for residents to study or rent out.",
-    "tags": [7, 12, 16, 20],
-    "website": "https://www.sjcnc.org/"
-  },
-  {
-    "id": 64,
-    "maps_id": "ChIJqRj-AoHXDIgRPx7RYZXhn1Q",
-    "name": "Gregory Hall",
-    "short_name": "Gregory Hall",
-    "description": "Main department for History, has a few lounges for certain students.",
-    "tags": [4, 6, 18],
-    "website": "https://history.illinois.edu/academics/graduate-studies/current-students/survival-guide-hgsa/gregory-hall"
+    "tags": [
+      6,
+      8,
+      12,
+      15,
+      18
+    ],
+    "website": "http://ada.fs.illinois.edu/0054PLAN1.html",
+    "image_id": "david_kinley_hall_1"
   },
   {
     "id": 65,
@@ -142,55 +74,16 @@
     "name": "Lincoln Hall",
     "short_name": "Lincoln",
     "description": "Lincoln Hall contains four floors which includes classrooms, a theater, conference rooms, and offices for faculty.",
-    "tags": [6, 8, 12, 13, 15, 18],
-    "website": "https://foellinger.illinois.edu/lincoln-hall-theater/"
-  },
-  {
-    "id": 66,
-    "maps_id": "ChIJyWA1Bj7XDIgRCMKLB-RaR-w",
-    "name": "Foellinger Auditorium",
-    "short_name": "Foellinger",
-    "description": "UIUC's largest auditorium that seats up to 2,059 members.",
-    "tags": [5, 6],
-    "website": "https://foellinger.illinois.edu/"
-  },
-  {
-    "id": 68,
-    "maps_id": "ChIJHYDd4RXXDIgR3-xxGERt71A",
-    "name": "Foreign Languages Building",
-    "short_name": "Foreign Languages Building",
-    "description": "Main location for language courses, includes many classrooms and small areas to sit down and work.",
-    "tags": [6, 8, 18],
-    "website": "https://uihistories.library.illinois.edu/virtualtour/maincampus/flb/"
-  },
-  {
-    "id": 69,
-    "maps_id": "ChIJ-b_t9hXXDIgR2SIIkBGBBro",
-    "name": "Davenport Hall",
-    "short_name": "Davenport Hall",
-    "description": "Agriculture building filled mainly with classrooms.",
-    "tags": [5, 6, 18],
-    "website": "https://uihistories.library.illinois.edu/virtualtour/maincampus/davenport/"
-  },
-
-
-  {
-    "id": 78,
-    "maps_id": "ChIJL-RUMBTXDIgRq4QEFngxrXg",
-    "name": "Espresso Royale",
-    "short_name": "Espresso Royale",
-    "description": "Traditional coffee shop with cozy chairs and warm atmosphere.",
-    "tags": [1, 2, 3, 11, 12, 13, 22],
-    "website": "https://espressocu.square.site/"
-  },
-  {
-    "id": 80,
-    "maps_id": "ChIJmShlBxTXDIgRrSUw8yFgLFc",
-    "name": "Caffé Bene",
-    "short_name": "Caffé Bene",
-    "description": "Traditional cofee shop feel with more options for seating and cozy atmosphere.",
-    "tags": [1, 2, 3, 11, 12, 13, 22],
-    "website": "https://www.caffebeneurbana.com/"
+    "tags": [
+      6,
+      8,
+      12,
+      13,
+      15,
+      18
+    ],
+    "website": "https://foellinger.illinois.edu/lincoln-hall-theater/",
+    "image_id": "lincoln_hall_1"
   },
   {
     "id": 86,
@@ -198,29 +91,17 @@
     "name": "Caffe Paradiso",
     "short_name": "Paradiso",
     "description": "A cozy coffee shop on Lincoln Ave with tables to work at",
-    "tags": [2, 5, 8, 11, 12, 13, 22],
-    "website": "http://www.enjoyparadiso.com/"
-  },
-
-
-
-  {
-    "id": 90,
-    "maps_id": "ChIJs2weZhTXDIgR9-Mz0s0qNrs",
-    "name": "Krannert Center for the Performing Arts",
-    "short_name": "Krannert Center",
-    "description": "Large performing arts center with various stages for performances.",
-    "tags": [3, 5, 6, 12],
-    "website": "https://music.illinois.edu/krannert-center-performing-arts"
-  },
-  {
-    "id": 95,
-    "maps_id": "ChIJd8U1gxXXDIgREfaRySm4rJc",
-    "name": "Noyes Laboratory",
-    "short_name": "Noyes",
-    "description": "Main Chemistry building containing mulit-use labs, classrooms, and office space.",
-    "tags": [6, 18],
-    "website": "https://explorecu.org/items/show/294"
+    "tags": [
+      2,
+      5,
+      8,
+      11,
+      12,
+      13,
+      22
+    ],
+    "website": "http://www.enjoyparadiso.com/",
+    "image_id": "caffe_paradiso_1"
   },
   {
     "id": 97,
@@ -228,90 +109,13 @@
     "name": "Davenport Hall",
     "short_name": "Davenport",
     "description": "Located by the quad, many classrooms to study in.",
-    "tags": [6, 13, 18],
-    "website": "http://ada.fs.illinois.edu/0001.html"
-  },
-  {
-    "id": 98,
-    "maps_id": "ChIJdbQnQj7XDIgRSCQkRPvFOM4",
-    "name": "University of Illinois at Urbana-Champaign Department of English",
-    "short_name": "English Building",
-    "description": "Older feeling building mainly composed of classrooms, but also has areas to settle in.",
-    "tags": [5, 6, 7, 18],
-    "website": "https://en.wikipedia.org/wiki/English_Building,_University_of_Illinois_Urbana-Champaign"
-  },
-  {
-    "id": 99,
-    "maps_id": "ChIJv6yp7D7XDIgRiY-0q-92Th8",
-    "name": "Department of Psychology",
-    "short_name": "Psych Building",
-    "description": "Area for Psychology classrooms and services, also has a smaller computer lab for use.",
-    "tags": [4, 6, 17, 18],
-    "website": "https://psychology.illinois.edu/resources/department-resources/facilities/location-and-hours"
-  },
-  {
-    "id": 110,
-    "maps_id": "ChIJv6yp7D7XDIgRiY-0q-92Th8",
-    "name": "Illini Union Bookstore",
-    "short_name": "Bookstore",
-    "description": "Student center and merch shop that also has areas to work and get coffee in a louder setting.",
-    "tags": [1, 2, 6, 11, 12],
-    "website": "https://bookstore.illinois.edu/"
-  },
-  {
-    "id": 113,
-    "maps_id": "ChIJ_9y4QxPXDIgR2r8UrWf8UZw",
-    "name": "Illinois Street Residence Halls",
-    "short_name": "ISR",
-    "description": "Newest student center with dining and various options to study, ranging from quieter to more lively.",
-    "tags": [2, 4, 6, 7, 8, 11, 12, 16, 17, 20],
-    "website": "https://preview.housing.illinois.edu/Resources/residence-hall-libraries/locations/isr-library"
-  },
-  {
-    "id": 119,
-    "maps_id": "ChIJtVT0DevQDIgRg2QaCHxOuuc",
-    "name": "Illini Union",
-    "short_name": "Union",
-    "description": "Large student center with multiple floors with different personalities. Middle floor has areas for lively study spots, whereas the basement includes more recreational activities and a food court.",
-    "tags": [2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 17, 18],
-    "website": "https://union.illinois.edu/"
-  },
-  {
-    "id": 120,
-    "maps_id": "ChIJqWprsD_XDIgRpHUf_8i8Duc",
-    "name": "Altgeld Hall",
-    "short_name": "Altgeld Hall",
-    "description": "Historical feeling building home to many Mathematics resources. Mainly filled with classrooms and main Mathematics Library.",
-    "tags": [5, 6, 18, 21],
-    "website": "https://math.illinois.edu/resources/history-altgeld-hall"
-  },
-
-  {
-    "id": 129,
-    "maps_id": "ChIJAczTOz_XDIgRqWfwfdK_K2U",
-    "name": "Kung Fu Tea",
-    "short_name": "KFT",
-    "description": "Popular boba location with cozy feel and multiple tables for getting work done.",
-    "tags": [2, 3, 11, 22],
-    "website": "https://kungfutea.com/menu/"
-  },
-  {
-    "id": 137,
-    "maps_id": "ChIJASGfuhTXDIgRac9qLZ-gsOU",
-    "name": "Loomis Laboratory Of Physics",
-    "short_name": "Loomis",
-    "description": "Main Physics building with various laboratory areas an lecture halls, along with some seating in the corridor.",
-    "tags": [5, 6, 12, 18],
-    "website": "https://physics.illinois.edu/research/facilities"
-  },
-  {
-    "id": 141,
-    "maps_id": "ChIJNfcijj_XDIgR4kQwtWU0hAE",
-    "name": "Everitt Laboratory (Electrical and Computer Engineering Laboratory)",
-    "short_name": "Everitt Lab",
-    "description": "Home of Bioengineering department with areas for classes, lectures, and some tables spread out for silent study.",
-    "tags": [5, 6, 7, 18],
-    "website": "https://everitt.illinois.edu/"
+    "tags": [
+      6,
+      13,
+      18
+    ],
+    "website": "http://ada.fs.illinois.edu/0001.html",
+    "image_id": "davenport_hall_1"
   },
   {
     "id": 143,
@@ -319,17 +123,12 @@
     "name": "Bardeen Quadrangle",
     "short_name": "Bardeen",
     "description": "Pleasant view with boneyard creek going through it and some outdoor seating.",
-    "tags": [6, 13],
-    "website": "https://uihistories.library.illinois.edu/virtualtour/engineering/bardeenquad/"
-  },
-  {
-    "id": 144,
-    "maps_id": "ChIJQ5lPE23XDIgRD6LvRKYCcOY",
-    "name": "Campus Instructional Facility",
-    "short_name": "CIF",
-    "description": "5 story building with large classrooms that act as study areas when classes are not in session. Can find quieter areas upstairs where less students are roaming.",
-    "tags": [1, 5, 6, 8, 10, 12, 15, 18],
-    "website": "https://cif.illinois.edu/"
+    "tags": [
+      6,
+      13
+    ],
+    "website": "https://uihistories.library.illinois.edu/virtualtour/engineering/bardeenquad/",
+    "image_id": "bardeen_quad_1"
   },
   {
     "id": 145,
@@ -337,18 +136,24 @@
     "name": "Grainger Engineering Library",
     "short_name": "Grainger",
     "description": "Library with solo study spaces and group ones too. Has a cafe and you can rent a charger here.",
-    "tags": [2, 5, 6, 7, 8, 9, 11, 12, 15, 16, 17, 19, 20, 21],
-    "website": "https://www.library.illinois.edu/enx/"
-  },
-
-  {
-    "id": 156,
-    "maps_id": "ChIJqXmEqmvXDIgRMJY1DdQBn04",
-    "name": "Department of Computer Science, University of Illinois Urbana-Champaign",
-    "short_name": "Siebel",
-    "description": "Main center for Computer Science resources, includes classrooms and computer labs for students to actively use.",
-    "tags": [1, 2, 4, 5, 6, 11, 12, 13, 15, 17, 18],
-    "website": "https://cs.illinois.edu/about"
+    "tags": [
+      2,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21
+    ],
+    "website": "https://www.library.illinois.edu/enx/",
+    "image_id": "grainger_1"
   },
   {
     "id": 157,
@@ -356,17 +161,12 @@
     "name": "Digital Computer Laboratory",
     "short_name": "DCL",
     "description": "This relatively cozy building has some tables and benches in the basement to study at.",
-    "tags": [6, 17, 18],
-    "website": "http://ada.fs.illinois.edu/0210.html"
-  },
-
-  {
-    "id": 169,
-    "maps_id": "ChIJYdQjsDjXDIgRAcnsygN7VKI",
-    "name": "BrewLab Coffee",
-    "short_name": "BrewLab",
-    "description": "Small coffee shop with limited seating inside, and tables outdoors.",
-    "tags": [1, 2, 11, 13, 22],
-    "website": "https://www.brewlab.coffee/home"
+    "tags": [
+      6,
+      17,
+      18
+    ],
+    "website": "http://ada.fs.illinois.edu/0210.html",
+    "image_id": "dcl_1"
   }
 ]
