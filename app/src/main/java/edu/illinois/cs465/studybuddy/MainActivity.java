@@ -14,25 +14,52 @@ public class MainActivity extends AppCompatActivity {
     private Button filterButton;
     private Button resetButton;
     private Button nameSearchButton;
+    private Button homePageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //get the on-boarding set data from the shared preferences
         SharedPreferences myPrefs = getSharedPreferences("Onboarding", MODE_PRIVATE);
         String s = myPrefs.getString("forYou", "");
+        //check whether the on-boarding page are set, if unset, we can let user to go the onboarding page
         if (s.length() == 0) {
+            //go to the on-boarding page
             startOnboarding();
         } else {
+            //go to the main to see the several activities we have
+            // redirect to the home_page
+            startHomePage();
+
+
             setContentView(R.layout.activity_main);
+            // filter
             filterButton = (Button)findViewById(R.id.filter_button);
             filterButton.setOnClickListener(v -> StartFilterSearch());
+
+            //reset the onboarding set
             resetButton = (Button)findViewById(R.id.reset_button);
             resetButton.setOnClickListener(v -> resetOnboardingSet());
+
+            //search name
             nameSearchButton = (Button)findViewById(R.id.name_search_button);
             nameSearchButton.setOnClickListener(v -> StartSearchByName());
-            Log.d("find the s", s);
+
+            //home page
+            homePageButton = (Button)findViewById(R.id.home_page_button);
+            homePageButton.setOnClickListener(v -> startHomePage());
         }
+
+
     }
+
+    //go to the home page
+    private void startHomePage() {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
+    }
+
     //clear the onboarding set
     private void resetOnboardingSet() {
         SharedPreferences myPrefs = getSharedPreferences("Onboarding", MODE_PRIVATE);

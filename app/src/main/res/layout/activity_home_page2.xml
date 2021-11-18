@@ -40,9 +40,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center"
-                    >
+                    android:gravity="center">
                     <ImageView
+                        android:id="@+id/home_page_search_button"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:src="@drawable/circle"
@@ -81,6 +81,7 @@
                         android:layout_height="120dp"
                         android:src="@drawable/circle"
                         android:clickable="true"
+                        android:id="@+id/home_page_filter_button"
                         >
                     </ImageView>
 
@@ -119,6 +120,7 @@
                         android:layout_height="120dp"
                         android:src="@drawable/circle"
                         android:clickable="true"
+                        android:id="@+id/home_page_reset_button"
                         >
                     </ImageView>
 
@@ -135,7 +137,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Location"
+                        android:text="Reset"
                         android:textSize="15dp"
                         ></TextView>
                 </LinearLayout>
@@ -181,29 +183,28 @@
 
                         <com.wajahatkarim3.easyflipview.EasyFlipView
                             android:id="@+id/easyFlipView"
+                            android:layout_centerInParent="true"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_centerInParent="true"
+                            app:flipOnTouch="true"
                             app:flipDuration="500"
                             app:flipEnabled="true"
-                            app:flipOnTouch="true"
-                            app:flipType="horizontal">
+                            app:flipType = "horizontal">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
-
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_centerInParent="true"
-                                    android:background="@drawable/elcap" />
-
+                                    android:background="@drawable/elcap"
+                                    />
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_alignParentRight="true"
-                                    android:src="@drawable/ic_info_icon" />
+                                    android:src="@drawable/ic_info_icon"/>
 
                             </RelativeLayout>
 
@@ -215,41 +216,29 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_centerInParent="true"
-                                    android:background="@drawable/parson" />
+                                    />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical">
 
+                                    <ScrollView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="150dp">
 
-                                    <com.google.android.material.chip.ChipGroup
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:id="@+id/home_page_chips"
-                                        android:paddingLeft="10dp">
+                                        <com.google.android.material.chip.ChipGroup
+                                            android:id="@+id/home_page_chips"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="10dp">
 
-                                        <com.google.android.material.chip.Chip
-                                            android:id="@+id/chip7"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="first" />
-
-                                        <com.google.android.material.chip.Chip
-                                            android:id="@+id/chip8"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="second" />
-
-                                        <com.google.android.material.chip.Chip
-                                            android:id="@+id/chip9"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="third" />
-                                    </com.google.android.material.chip.ChipGroup>
+                                        </com.google.android.material.chip.ChipGroup>
+                                    </ScrollView>
                                 </LinearLayout>
 
                             </RelativeLayout>
+
 
 
                         </com.wajahatkarim3.easyflipview.EasyFlipView>
