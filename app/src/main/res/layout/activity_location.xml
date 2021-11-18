@@ -110,7 +110,11 @@
         </LinearLayout>
 
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+    <!--- Scroll comment out above two lines to enable
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
@@ -209,6 +213,8 @@
         </LinearLayout>
 
     </RelativeLayout>
+    -->
+
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>
 <!--<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"

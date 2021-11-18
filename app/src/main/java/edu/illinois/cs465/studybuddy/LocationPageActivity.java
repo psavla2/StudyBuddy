@@ -3,7 +3,9 @@ package edu.illinois.cs465.studybuddy;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
@@ -29,15 +31,18 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -71,6 +76,12 @@ public class LocationPageActivity extends AppCompatActivity {
         String desc = (extrasBundle == null) ? null : (String) extrasBundle.get("description");
         TextView tv2 = (TextView) findViewById(R.id.textView20);
         tv2.setText(desc);
+        String image_id = (extrasBundle == null) ? null : (String) extrasBundle.get("image_id");
+        int drawableResourceId = getResources().getIdentifier(image_id, "drawable", getPackageName());
+        if (drawableResourceId == 0) drawableResourceId = R.drawable.elcap;
+        Drawable d = getResources().getDrawable(drawableResourceId);
+        ImageView image = (ImageView)findViewById(R.id.imageView1);
+        image.setImageDrawable(d);
 
         mSpacesMap = new HashMap<>();
         mSelectedTags = new HashSet<>();
@@ -84,7 +95,6 @@ public class LocationPageActivity extends AppCompatActivity {
         for (StudySpace s : studySpaceArray) {
             mSpacesMap.put(s.id, s);
             mMatchingTags.put(s.id, 0);
-            //mSortedSpacesList.add(new LocationItem(s.name, s.description, s.id));
             mSortedSpacesList.add(new LocationItem(s));
         }
 
@@ -94,7 +104,7 @@ public class LocationPageActivity extends AppCompatActivity {
 
         for (Tag t : tags) {
             if (mSelectedTags.contains(t.id)) {
-                Chip chip = (Chip) inflater.inflate(R.layout.space_filter_chip, filters, false);
+                Chip chip = (Chip) inflater.inflate(R.layout.space_filter_chip_uncheck, filters, false);
                 chip.setId(t.id);
                 chip.setText(t.tag);
                 chip.setChecked(mSelectedTags.contains(t.id));
@@ -103,20 +113,7 @@ public class LocationPageActivity extends AppCompatActivity {
         }
     }
 
-
-    private int CompareLocationItems(LocationItem a, LocationItem b) {
-        Integer matchingA = mMatchingTags.get(a.getId());
-        Integer matchingB = mMatchingTags.get(b.getId());
-        matchingA = matchingA == null ? 0 : matchingA;
-        matchingB = matchingB == null ? 0 : matchingB;
-        return -1 * matchingA.compareTo(matchingB); // -1 indicates reverse order
-    }
-
     private void AddStartingTags(Integer [] filterTags) {
-        //Intent i = getIntent();
-        //Bundle extrasBundle = i.getExtras();
-        //Integer[] filterTags = (extrasBundle == null) ? null : (Integer[]) extrasBundle.get("filter_tags");
-        //System.out.println(filterTags);
         if (filterTags == null) return;
 
         for (Integer filterTag : filterTags) {
@@ -127,7 +124,5 @@ public class LocationPageActivity extends AppCompatActivity {
                 if (s.tags.contains(filterTag)) mMatchingTags.put(s.id, alreadyMatching + 1);
             }
         }
-
-        Collections.sort(mSortedSpacesList, this::CompareLocationItems);
     }
 }
