@@ -210,6 +210,7 @@
 
     </RelativeLayout>
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
 <!--<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
