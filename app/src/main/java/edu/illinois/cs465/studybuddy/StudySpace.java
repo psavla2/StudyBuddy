@@ -12,6 +12,7 @@ public class StudySpace {
     String description;
     Set<Integer> tags;
     String website;
+    String image_id;
 
     @NonNull
     @Override

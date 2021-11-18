@@ -4,16 +4,10 @@ import java.util.Locale;
 
 
 public class LocationItem {
-    private int imageDrawable;
     private StudySpace space;
 
     public LocationItem(StudySpace space) {
-        imageDrawable = R.drawable.elcap;
         this.space = space;
-    }
-
-    public int getImageDrawable() {
-        return imageDrawable;
     }
 
     public String getName() {
@@ -30,5 +24,9 @@ public class LocationItem {
 
     public StudySpace getStudySpace() {
         return space;
+    }
+
+    public String getImageId() {
+        return space.image_id;
     }
 }

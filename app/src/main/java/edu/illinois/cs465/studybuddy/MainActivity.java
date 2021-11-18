@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button filterButton;
     private Button resetButton;
+    private Button nameSearchButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
             filterButton.setOnClickListener(v -> StartFilterSearch());
             resetButton = (Button)findViewById(R.id.reset_button);
             resetButton.setOnClickListener(v -> resetOnboardingSet());
+            nameSearchButton = (Button)findViewById(R.id.name_search_button);
+            nameSearchButton.setOnClickListener(v -> StartSearchByName());
             Log.d("find the s", s);
         }
     }
@@ -43,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void StartFilterSearch() {
         Intent intent = new Intent(this, FilterSearchActivity.class);
+        intent.putExtra("filter_tags", new Integer[] { 2, 3, 4 });
+        startActivity(intent);
+    }
+
+    private void StartSearchByName() {
+        Intent intent = new Intent(this, NameSearchActivity.class);
         startActivity(intent);
     }
 }

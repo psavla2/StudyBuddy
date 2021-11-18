@@ -108,7 +108,7 @@ public class FilterSearchActivity extends AppCompatActivity {
         Collections.sort(mSortedSpacesList, this::CompareLocationItems);
         UpdateRecycler();
     }
-//LOOK AT THIS FOR IMPLEMENTING PLAYLIST.
+
     private void AddStartingTags() {
         Intent i = getIntent();
         Bundle extrasBundle = i.getExtras();
