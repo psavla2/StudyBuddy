@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             nameSearchButton.setOnClickListener(v -> StartSearchByName());
 
             //home page
-            homePageButton = (Button)findViewById(R.id.home_page_button);
-            homePageButton.setOnClickListener(v -> startHomePage());
+//            homePageButton = (Button)findViewById(R.id.home_page_button);
+//            homePageButton.setOnClickListener(v -> startHomePage());
         }
 
 
