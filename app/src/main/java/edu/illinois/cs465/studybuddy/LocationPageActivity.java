@@ -41,8 +41,12 @@ public class LocationPageActivity extends AppCompatActivity {
         TextView tv2 = findViewById(R.id.textView20);
         tv2.setText(desc);
         String image_id = (extrasBundle == null) ? null : (String) extrasBundle.get("image_id");
-        int drawableResourceId = getResources().getIdentifier(image_id, "drawable", getPackageName());
-        if (drawableResourceId == 0) drawableResourceId = R.drawable.elcap;
+
+        int drawableResourceId = R.drawable.elcap;
+        if (image_id != null) {
+            drawableResourceId = getResources().getIdentifier(image_id, "drawable", getPackageName());
+        }
+
         Drawable d = getResources().getDrawable(drawableResourceId);
         ImageView image = findViewById(R.id.imageView1);
         image.setImageDrawable(d);
