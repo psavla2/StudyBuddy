@@ -1,6 +1,6 @@
 [
   {
-    "id": "7",
+    "id": 7,
     "maps_id": "ChIJq3dgmhDXDIgRyCQxatZeJBw",
     "name": "Stanley Illini Grove",
     "short_name": "Illini Grove",
@@ -10,7 +10,7 @@
     "image_id": "illini_grove_1"
   },
   {
-    "id": "11",
+    "id": 11,
     "maps_id": "ChIJwR71sBfXDIgRv9mtjD_0x14",
     "name": "ACES Library",
     "short_name": "ACES Library",
@@ -20,13 +20,13 @@
     "image_id": "aces_library_1"
   },
   {
-    "id": "14",
+    "id": 14,
     "maps_id": "ChIJUWSq_BfXDIgRVJ2AiN0Qt4U",
     "name": "Department of Agriculture and Biological Engineering Sciences",
     "short_name": "ABE Building"
   },
   {
-    "id": "19",
+    "id": 19,
     "maps_id": "ChIJVZTcqiTXDIgRixTfOYpAOQg",
     "name": "University of Illinois College of Law",
     "short_name": "Law Building",
@@ -35,7 +35,7 @@
     "website": "https://law.illinois.edu/academics/library/"
   },
   {
-    "id": "23",
+    "id": 23,
     "maps_id": "ChIJXQMDUA_XDIgRCMznJSyf--c",
     "name": "Siebel Center for Design",
     "short_name": "SCD",
@@ -44,7 +44,7 @@
     "website": "https://designcenter.illinois.edu/"
   },
   {
-    "id": "24",
+    "id": 24,
     "maps_id": "ChIJu-iLrDrXDIgRttGoUNxRUgc",
     "name": "University of Illinois Campus Recreation",
     "short_name": "ARC",
@@ -53,7 +53,7 @@
     "website": "https://campusrec.illinois.edu/facilities/activities-and-recreation-center-arc/"
   },
   {
-    "id": "32",
+    "id": 32,
     "maps_id": "ChIJeUz7YTrXDIgRC0QtdLZNcOc",
     "name": "Student Dining and Residential Programs Building",
     "short_name": "IKE",
@@ -62,7 +62,7 @@
     "website": "https://housing.illinois.edu/aboutus/sdrp"
   },
   {
-    "id": "38",
+    "id": 38,
     "maps_id": "ChIJk-StWQzXDIgRNzKIHPOND7g",
     "name": "George Huff Hall",
     "short_name": "Huff Hall",
@@ -72,7 +72,7 @@
     "image_id": "gregory_huff_hall_1"
   },
   {
-    "id": "39",
+    "id": 39,
     "maps_id": "ChIJBe2qxP3XDIgRV5W_-SsuPrM",
     "name": "Business Instructional Facility",
     "short_name": "BIF",
@@ -81,13 +81,13 @@
     "website": "https://giesbusiness.illinois.edu/our-story/facilities"
   },
   {
-    "id": "41",
+    "id": 41,
     "maps_id": "ChIJUbzg9zzXDIgRbCnqdt9lWQ4",
     "name": "Wohlers Hall",
     "short_name": "Wohlers Hall"
   },
   {
-    "id": "43",
+    "id": 43,
     "maps_id": "ChIJ51_2pz3XDIgRm_U3cL9O62k",
     "name": "David Kinley Hall",
     "short_name": "David Kinley",
@@ -97,7 +97,7 @@
     "image_id": "david_kinley_hall_1"
   },
   {
-    "id": "49",
+    "id": 49,
     "maps_id": "ChIJH26PaxHXDIgRC-omrwv-rVs",
     "name": "Campus Recreation Center East",
     "short_name": "CRCE",
@@ -106,7 +106,7 @@
     "website": "https://campusrec.illinois.edu/facilities/campus-recreation-center-east-crce/"
   },
   {
-    "id": "53",
+    "id": 53,
     "maps_id": "ChIJbcxsjT3XDIgRrjTeNpUyYIY",
     "name": "Undergraduate Library",
     "short_name": "UGL",
@@ -115,7 +115,7 @@
     "website": "https://www.library.illinois.edu/ugl/"
   },
   {
-    "id": "54",
+    "id": 54,
     "maps_id": "ChIJa_UstD3XDIgRZUlIgRXSgeo",
     "name": "Main Library",
     "short_name": "Main Library",
@@ -124,7 +124,7 @@
     "website": "https://www.library.illinois.edu/"
   },
   {
-    "id": "55",
+    "id": 55,
     "maps_id": "ChIJFwJwvjvXDIgReBmVK2_VIQs",
     "name": "University of Illinois Armory",
     "short_name": "Armory",
@@ -133,7 +133,7 @@
     "website": "https://fightingillini.com/facilities/ui-armory/5"
   },
   {
-    "id": "62",
+    "id": 62,
     "maps_id": "ChIJqVBsJzzXDIgRnIFTmkSiVWw",
     "name": "St. John's Catholic Newman Center",
     "short_name": "Newman",
@@ -142,7 +142,7 @@
     "website": "https://www.sjcnc.org/"
   },
   {
-    "id": "64",
+    "id": 64,
     "maps_id": "ChIJqRj-AoHXDIgRPx7RYZXhn1Q",
     "name": "Gregory Hall",
     "short_name": "Gregory Hall",
@@ -151,7 +151,7 @@
     "website": "https://history.illinois.edu/academics/graduate-studies/current-students/survival-guide-hgsa/gregory-hall"
   },
   {
-    "id": "65",
+    "id": 65,
     "maps_id": "ChIJyYXA3KLXDIgRizSDBgHhBMA",
     "name": "Lincoln Hall",
     "short_name": "Lincoln Hall",
@@ -161,7 +161,7 @@
     "image_id": "lincoln_hall_1"
   },
   {
-    "id": "66",
+    "id": 66,
     "maps_id": "ChIJyWA1Bj7XDIgRCMKLB-RaR-w",
     "name": "Foellinger Auditorium",
     "short_name": "Foellinger",
@@ -170,13 +170,13 @@
     "website": "https://foellinger.illinois.edu/"
   },
   {
-    "id": "67",
+    "id": 67,
     "maps_id": "ChIJb4FfDxbXDIgRWgzAqvbwE2s",
     "name": "Smith Memorial Hall",
     "short_name": "Smith Hall"
   },
   {
-    "id": "68",
+    "id": 68,
     "maps_id": "ChIJHYDd4RXXDIgR3-xxGERt71A",
     "name": "Foreign Languages Building",
     "short_name": "",
@@ -185,7 +185,7 @@
     "website": "https://uihistories.library.illinois.edu/virtualtour/maincampus/flb/"
   },
   {
-    "id": "69",
+    "id": 69,
     "maps_id": "ChIJ-b_t9hXXDIgR2SIIkBGBBro",
     "name": "Davenport Hall",
     "short_name": "Davenport Hall",
@@ -194,13 +194,13 @@
     "website": "https://uihistories.library.illinois.edu/virtualtour/maincampus/davenport/"
   },
   {
-    "id": "73",
+    "id": 73,
     "maps_id": "ChIJueNKfBbXDIgR2hp4iss0Fnc",
     "name": "La Casa Cultural Latina",
     "short_name": "La Casa"
   },
   {
-    "id": "78",
+    "id": 78,
     "maps_id": "ChIJL-RUMBTXDIgRq4QEFngxrXg",
     "name": "Espresso Royale",
     "short_name": "Espresso Royale",
@@ -209,7 +209,7 @@
     "website": "https://espressocu.square.site/"
   },
   {
-    "id": "80",
+    "id": 80,
     "maps_id": "ChIJmShlBxTXDIgRrSUw8yFgLFc",
     "name": "Caffé Bene",
     "short_name": "Caffé Bene",
@@ -218,7 +218,7 @@
     "website": "https://www.caffebeneurbana.com/"
   },
   {
-    "id": "86",
+    "id": 86,
     "maps_id": "ChIJZ9trgBHXDIgR3KFYrAKfvGI",
     "name": "Caffe Paradiso",
     "short_name": "Caffe Paradiso",
@@ -228,7 +228,7 @@
     "image_id": "caffe_paradiso_1"
   },
   {
-    "id": "90",
+    "id": 90,
     "maps_id": "ChIJs2weZhTXDIgR9-Mz0s0qNrs",
     "name": "Krannert Center for the Performing Arts",
     "short_name": "Krannert Center",
@@ -237,13 +237,13 @@
     "website": "https://music.illinois.edu/krannert-center-performing-arts"
   },
   {
-    "id": "93",
+    "id": 93,
     "maps_id": "ChIJ58E2BxXXDIgRGNbTasTa5sQ",
     "name": "Justin Smith Morrill Hall",
     "short_name": "Morrill Hall"
   },
   {
-    "id": "95",
+    "id": 95,
     "maps_id": "ChIJd8U1gxXXDIgREfaRySm4rJc",
     "name": "Noyes Laboratory",
     "short_name": "Noyes",
@@ -252,7 +252,7 @@
     "website": "https://explorecu.org/items/show/294"
   },
   {
-    "id": "97",
+    "id": 97,
     "maps_id": "ChIJ-b_t9hXXDIgR2SIIkBGBBro",
     "name": "Davenport Hall",
     "short_name": "Davenport Hall",
@@ -262,7 +262,7 @@
     "image_id": "davenport_hall_1"
   },
   {
-    "id": "98",
+    "id": 98,
     "maps_id": "ChIJdbQnQj7XDIgRSCQkRPvFOM4",
     "name": "University of Illinois at Urbana-Champaign Department of English",
     "short_name": "English Building",
@@ -271,7 +271,7 @@
     "website": "https://en.wikipedia.org/wiki/English_Building,_University_of_Illinois_Urbana-Champaign"
   },
   {
-    "id": "99",
+    "id": 99,
     "maps_id": "ChIJv6yp7D7XDIgRiY-0q-92Th8",
     "name": "Department of Psychology",
     "short_name": "Psych Building",
@@ -280,7 +280,7 @@
     "website": "https://psychology.illinois.edu/resources/department-resources/facilities/location-and-hours"
   },
   {
-    "id": "110",
+    "id": 110,
     "maps_id": "ChIJv6yp7D7XDIgRiY-0q-92Th8",
     "name": "Illini Union Bookstore",
     "short_name": "Bookstore",
@@ -289,7 +289,7 @@
     "website": "https://bookstore.illinois.edu/"
   },
   {
-    "id": "113",
+    "id": 113,
     "maps_id": "ChIJ_9y4QxPXDIgR2r8UrWf8UZw",
     "name": "Illinois Street Residence Halls",
     "short_name": "ISR",
@@ -298,7 +298,7 @@
     "website": "https://preview.housing.illinois.edu/Resources/residence-hall-libraries/locations/isr-library"
   },
   {
-    "id": "119",
+    "id": 119,
     "maps_id": "ChIJtVT0DevQDIgRg2QaCHxOuuc",
     "name": "Illini Union",
     "short_name": "Union",
@@ -307,7 +307,7 @@
     "website": "https://union.illinois.edu/"
   },
   {
-    "id": "120",
+    "id": 120,
     "maps_id": "ChIJqWprsD_XDIgRpHUf_8i8Duc",
     "name": "Altgeld Hall",
     "short_name": "Altgeld Hall",
@@ -316,25 +316,25 @@
     "website": "https://math.illinois.edu/resources/history-altgeld-hall"
   },
   {
-    "id": "123",
+    "id": 123,
     "maps_id": "ChIJFbOvCj_XDIgRvgXR-i7aYCE",
     "name": "Cocomero",
     "short_name": "Cocomero"
   },
   {
-    "id": "125",
+    "id": 125,
     "maps_id": "ChIJp2VVbT_XDIgR5Wxw1qbuiqc",
     "name": "Teamoji",
     "short_name": "Teamoji"
   },
   {
-    "id": "126",
+    "id": 126,
     "maps_id": "ChIJxwkLcT_XDIgRZtmcVWJWhgo",
     "name": "Spoon House Korean Kitchen",
     "short_name": "Spoon House"
   },
   {
-    "id": "129",
+    "id": 129,
     "maps_id": "ChIJAczTOz_XDIgRqWfwfdK_K2U",
     "name": "Kung Fu Tea",
     "short_name": "Kung Fu Tea",
@@ -343,31 +343,31 @@
     "website": "https://kungfutea.com/menu/"
   },
   {
-    "id": "130",
+    "id": 130,
     "maps_id": "ChIJCSclLObXDIgRx5nRqQU4cmg",
     "name": "Asian Taste",
     "short_name": "Asian Taste"
   },
   {
-    "id": "131",
+    "id": 131,
     "maps_id": "ChIJd8v1dj3XDIgRGFyGofX9zrE",
     "name": "South Quad",
     "short_name": "South Quad"
   },
   {
-    "id": "132",
+    "id": 132,
     "maps_id": "ChIJKbzhJD7XDIgREompraEpLn8",
     "name": "Main Quad",
     "short_name": "Main Quad"
   },
   {
-    "id": "133",
+    "id": 133,
     "maps_id": "ChIJb4aQBxPXDIgRCV_EQyiVgws",
     "name": "Hallene Gateway",
     "short_name": "Hallene Gateway"
   },
   {
-    "id": "137",
+    "id": 137,
     "maps_id": "ChIJASGfuhTXDIgRac9qLZ-gsOU",
     "name": "Loomis Laboratory Of Physics, University Of Illinois",
     "short_name": "Loomis",
@@ -376,25 +376,25 @@
     "website": "https://physics.illinois.edu/research/facilities"
   },
   {
-    "id": "138",
+    "id": 138,
     "maps_id": "ChIJu9TEbZXXDIgRZ6-SXW-uvn0",
     "name": "Sidney Lu Mechanical Engineering Building",
     "short_name": "Sidney Lu Building"
   },
   {
-    "id": "139",
+    "id": 139,
     "maps_id": "ChIJ-1qO-j_XDIgRRyMBf46-EXM",
     "name": "Materials Science and Engineering Building",
     "short_name": "Matse Building"
   },
   {
-    "id": "140",
+    "id": 140,
     "maps_id": "ChIJsT_RLNvXDIgRwzBhIw0jUAE",
     "name": "Engineering Hall",
     "short_name": "Engineering Hall"
   },
   {
-    "id": "141",
+    "id": 141,
     "maps_id": "ChIJNfcijj_XDIgR4kQwtWU0hAE",
     "name": "Everitt Laboratory (Electrical and Computer Engineering Laboratory)",
     "short_name": "Everitt Lab",
@@ -403,7 +403,7 @@
     "website": "https://everitt.illinois.edu/"
   },
   {
-    "id": "143",
+    "id": 143,
     "maps_id": "ChIJccMLBUDXDIgRoVgxhCMQ5jY",
     "name": "Bardeen Quadrangle",
     "short_name": "Bardeen Quad",
@@ -413,7 +413,7 @@
     "image_id": "bardeen_quad_1"
   },
   {
-    "id": "144",
+    "id": 144,
     "maps_id": "ChIJQ5lPE23XDIgRD6LvRKYCcOY",
     "name": "Campus Instructional Facility (CIF)",
     "short_name": "CIF",
@@ -422,7 +422,7 @@
     "website": "https://cif.illinois.edu/"
   },
   {
-    "id": "145",
+    "id": 145,
     "maps_id": "ChIJtViDlmrXDIgRwp5DMl59fK4",
     "name": "Grainger Engineering Library",
     "short_name": "Grainger",
@@ -432,13 +432,13 @@
     "image_id": "grainger_1"
   },
   {
-    "id": "146",
+    "id": 146,
     "maps_id": "ChIJBw-jr2rXDIgR-z33ibzqWnA",
     "name": "Mechanical Engineering Laboratory",
     "short_name": "ME Lab"
   },
   {
-    "id": "156",
+    "id": 156,
     "maps_id": "ChIJqXmEqmvXDIgRMJY1DdQBn04",
     "name": "Department of Computer Science, University of Illinois Urbana-Champaign",
     "short_name": "Siebel",
@@ -447,7 +447,7 @@
     "website": "https://cs.illinois.edu/about"
   },
   {
-    "id": "157",
+    "id": 157,
     "maps_id": "ChIJM-RtnWrXDIgRRP-cVNJU2Lo",
     "name": "Digital Computer Laboratory",
     "short_name": "DCL",
@@ -457,25 +457,25 @@
     "image_id": "dcl_1"
   },
   {
-    "id": "161",
+    "id": 161,
     "maps_id": "ChIJi4IA30HXDIgRfnz0Z73MpfI",
     "name": "Coordinated Science Laboratory",
     "short_name": "CSL"
   },
   {
-    "id": "164",
+    "id": 164,
     "maps_id": "ChIJE1PgJpLXDIgRLt5D7qb2Rjo",
     "name": "BakeLab",
     "short_name": "BakeLab"
   },
   {
-    "id": "166",
+    "id": 166,
     "maps_id": "ChIJxXYj3PvXDIgRYwrUpo6gS-8",
     "name": "Bearology\r",
     "short_name": "Bearology"
   },
   {
-    "id": "169",
+    "id": 169,
     "maps_id": "ChIJYdQjsDjXDIgRAcnsygN7VKI",
     "name": "BrewLab Coffee",
     "short_name": "BrewLab",
@@ -484,7 +484,7 @@
     "website": "https://www.brewlab.coffee/home"
   },
   {
-    "id": "172",
+    "id": 172,
     "maps_id": "ChIJg4haaEjXDIgRJsKelGXDHDE",
     "name": "Boneyard Creek Second Street Basin"
   }
