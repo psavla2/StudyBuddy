@@ -188,15 +188,11 @@
 
                         <Space android:layout_width="20dp" android:layout_height="wrap_content">
 
-                        </Space>
+                        </Space><![CDATA[
 =======
-                        <ImageView
-                            android:id="@+id/for_you_button"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:layout_marginRight="40dp"
-                            android:src="@drawable/circle2" />
->>>>>>> Stashed changes
+                        >>>>>>> Stashed changes
+
+                        ]]>
 
                         <RelativeLayout
                             android:layout_width="150dp"
