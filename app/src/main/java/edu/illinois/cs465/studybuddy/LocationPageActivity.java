@@ -58,11 +58,9 @@ import java.util.Locale;
 
 public class LocationPageActivity extends AppCompatActivity {
 
-    private HashMap<Integer, StudySpace> mSpacesMap; // location ID -> StudySpace
-    private List<LocationItem> mSortedSpacesList;
-    private HashMap<Integer, Integer> mMatchingTags; // location ID -> number of matching tags
-    private HashSet<Integer> mSelectedTags;
 
+    private HashSet<Integer> mSelectedTags;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,21 +81,11 @@ public class LocationPageActivity extends AppCompatActivity {
         ImageView image = (ImageView)findViewById(R.id.imageView1);
         image.setImageDrawable(d);
 
-        mSpacesMap = new HashMap<>();
+
         mSelectedTags = new HashSet<>();
-        mMatchingTags = new HashMap<>();
-        mSortedSpacesList = new ArrayList<>();
+
         ChipGroup filters = findViewById(R.id.filters_chip_group);
         Tag[] tags = JsonReader.getTags(this);
-
-        StudySpace[] studySpaceArray = JsonReader.getSpaces(this);
-
-        for (StudySpace s : studySpaceArray) {
-            mSpacesMap.put(s.id, s);
-            mMatchingTags.put(s.id, 0);
-            mSortedSpacesList.add(new LocationItem(s));
-        }
-
         AddStartingTags(filterTags);
 
         LayoutInflater inflater = LayoutInflater.from(this);
@@ -118,11 +106,6 @@ public class LocationPageActivity extends AppCompatActivity {
 
         for (Integer filterTag : filterTags) {
             mSelectedTags.add(filterTag);
-            for (StudySpace s : mSpacesMap.values()) {
-                Integer alreadyMatching = mMatchingTags.get(s.id);
-                if (alreadyMatching == null) alreadyMatching = 0;
-                if (s.tags.contains(filterTag)) mMatchingTags.put(s.id, alreadyMatching + 1);
-            }
         }
     }
 }
