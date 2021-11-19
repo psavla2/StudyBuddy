@@ -45,6 +45,7 @@ public class LocationPageActivity extends AppCompatActivity {
         int drawableResourceId = R.drawable.elcap;
         if (image_id != null) {
             drawableResourceId = getResources().getIdentifier(image_id, "drawable", getPackageName());
+            if (drawableResourceId == 0) drawableResourceId = R.drawable.elcap;
         }
 
         Drawable d = getResources().getDrawable(drawableResourceId);
