@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="playlist_square">125dp</dimen>
+    <dimen name="playlist_margin">30dp</dimen>
+    <dimen name="chip_container_width">200dp</dimen>
+</resources>

@@ -5,260 +5,248 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:background="@color/white"
-        android:gravity="center_horizontal"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:layout_weight="1">
-            <TextView
-                android:layout_marginTop="30dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Find a place to study"
-                android:textSize="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginLeft="10dp"
-                android:paddingLeft="20dp"
-                ></TextView>
+            android:padding="24dp"
+            tools:ignore="MissingConstraints">
 
             <LinearLayout
+                android:id="@+id/playlist_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="40dp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/home_page_search_button"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/circle"
-                        android:clickable="true">
-                    </ImageView>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/search"
-                        android:layout_marginTop="-90dp"
-                        >
-                    </ImageView>
-
-
-                    <TextView
-                        android:layout_marginTop="0dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Search"
-                        android:textSize="15dp"
-                        ></TextView>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginLeft="40dp"
-                    >
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/circle"
-                        android:clickable="true"
-                        android:id="@+id/home_page_filter_button"
-                        >
-                    </ImageView>
-
-                    <ImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/filter"
-                        android:layout_marginTop="-90dp"
-                        >
-                    </ImageView>
-
-
-                    <TextView
-                        android:layout_marginTop="0dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Filter"
-                        android:textSize="15dp"
-                        ></TextView>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                >
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    >
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/circle"
-                        android:clickable="true"
-                        android:id="@+id/home_page_reset_button"
-                        >
-                    </ImageView>
-
-                    <ImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/ic_reset"
-                        android:layout_marginTop="-100dp"
-                        >
-                    </ImageView>
-
-
-                    <TextView
-                        android:layout_marginTop="0dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Reset\nOnboarding"
-                        android:textAlignment="center"
-                        android:textSize="15dp"
-                        ></TextView>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="20dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Playlist"
-                    android:textSize="30dp"
-                    android:layout_marginEnd="30dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
                     android:paddingLeft="20dp"
-                    ></TextView>
+                    android:text="Find a place to study"
+                    android:textSize="30dp"></TextView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
                     android:gravity="center"
-                    android:minWidth="200dp"
-                    >
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/home_page_search_button"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:clickable="true"
+                            android:src="@drawable/circle"></ImageView>
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="-90dp"
+                            android:src="@drawable/search"></ImageView>
 
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/circle"
-                        android:layout_marginRight="40dp"
-                        />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Search"
+                            android:textSize="15dp"></TextView>
 
-                    <RelativeLayout
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        tools:context="dev.edmt.androideasyflipview.MainActivity">
-
-                        <com.wajahatkarim3.easyflipview.EasyFlipView
-                            android:id="@+id/easyFlipView"
-                            android:layout_centerInParent="true"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:flipOnTouch="true"
-                            app:flipDuration="500"
-                            app:flipEnabled="true"
-                            app:flipType = "horizontal">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_centerInParent="true"
-                                    android:background="@drawable/elcap"
-                                    />
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_alignParentRight="true"
-                                    android:src="@drawable/ic_info_icon"/>
-
-                            </RelativeLayout>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_centerInParent="true"
-                                    />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <ScrollView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="150dp">
-
-                                        <com.google.android.material.chip.ChipGroup
-                                            android:id="@+id/home_page_chips"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:paddingLeft="10dp">
-
-                                        </com.google.android.material.chip.ChipGroup>
-                                    </ScrollView>
-                                </LinearLayout>
-
-                            </RelativeLayout>
+                    </LinearLayout>
 
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                        </com.wajahatkarim3.easyflipview.EasyFlipView>
+                        <ImageView
+                            android:id="@+id/home_page_filter_button"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:clickable="true"
+                            android:src="@drawable/circle"></ImageView>
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="-90dp"
+                            android:src="@drawable/filter"></ImageView>
 
 
-
-
-
-                    </RelativeLayout>
-
-
-
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Filter"
+                            android:textSize="15dp"></TextView>
+                    </LinearLayout>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/home_page_reset_button"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:clickable="true"
+                            android:src="@drawable/circle"></ImageView>
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="-100dp"
+                            android:src="@drawable/ic_reset"></ImageView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Reset\nOnboarding"
+                            android:textAlignment="center"
+                            android:textSize="15dp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:paddingLeft="20dp"
+                        android:text="Playlist"
+                        android:textSize="30dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minWidth="200dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+
+                        <ImageView
+                            android:id="@+id/for_you_button"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="40dp"
+                            android:src="@drawable/circle" />
+
+                        <RelativeLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            tools:context="dev.edmt.androideasyflipview.MainActivity">
+
+                            <com.wajahatkarim3.easyflipview.EasyFlipView
+                                android:id="@+id/easyFlipView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                app:flipDuration="500"
+                                app:flipEnabled="true"
+                                app:flipOnTouch="true"
+                                app:flipType="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/elcap" />
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@drawable/ic_info_icon" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ScrollView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="150dp">
+
+                                            <com.google.android.material.chip.ChipGroup
+                                                android:id="@+id/home_page_chips"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:paddingLeft="10dp">
+
+                                            </com.google.android.material.chip.ChipGroup>
+                                        </ScrollView>
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+
+                            </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
-
         </LinearLayout>
-    </LinearLayout>
-
-
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
