@@ -5,7 +5,13 @@
     "name": "Stanley Illini Grove",
     "short_name": "Illini Grove",
     "description": "Picnic tables available to pick up a book and get some reading in.",
-    "tags": [1,5,12,13,14],
+    "tags": [
+      1,
+      5,
+      12,
+      13,
+      14
+    ],
     "website": "https://campusrec.illinois.edu/facilities/illini-grove/",
     "image_id": "illini_grove_1"
   },
@@ -15,15 +21,20 @@
     "name": "ACES Library",
     "short_name": "ACES Library",
     "description": "Library with classrooms to study on your own or with a small group.",
-    "tags": [5, 6, 8, 9, 12, 15, 16, 17, 19, 20],
+    "tags": [
+      5,
+      6,
+      8,
+      9,
+      12,
+      15,
+      16,
+      17,
+      19,
+      20
+    ],
     "website": "http://www.library.illinois.edu/funkaces/",
     "image_id": "aces_library_1"
-  },
-  {
-    "id": 14,
-    "maps_id": "ChIJUWSq_BfXDIgRVJ2AiN0Qt4U",
-    "name": "Department of Agriculture and Biological Engineering Sciences",
-    "short_name": "ABE Building"
   },
   {
     "id": 19,
@@ -65,26 +76,17 @@
     "id": 38,
     "maps_id": "ChIJk-StWQzXDIgRNzKIHPOND7g",
     "name": "George Huff Hall",
-    "short_name": "Huff Hall",
+    "short_name": "Huff",
     "description": "Multi-use facility with a gymnasium. South of the Armory.",
-    "tags": [6, 8, 12, 15, 18],
+    "tags": [
+      6,
+      8,
+      12,
+      15,
+      18
+    ],
     "website": "https://fightingillini.com/facilities/huff-hall-gymnastics-volleyball-wrestling/11",
     "image_id": "gregory_huff_hall_1"
-  },
-  {
-    "id": 39,
-    "maps_id": "ChIJBe2qxP3XDIgRV5W_-SsuPrM",
-    "name": "Business Instructional Facility",
-    "short_name": "BIF",
-    "description": "Main building for Business students and resources, filled with classrooms and tables for group study",
-    "tags": [1, 5, 6, 7, 11, 15, 18],
-    "website": "https://giesbusiness.illinois.edu/our-story/facilities"
-  },
-  {
-    "id": 41,
-    "maps_id": "ChIJUbzg9zzXDIgRbCnqdt9lWQ4",
-    "name": "Wohlers Hall",
-    "short_name": "Wohlers Hall"
   },
   {
     "id": 43,
@@ -92,7 +94,13 @@
     "name": "David Kinley Hall",
     "short_name": "David Kinley",
     "description": "Once known as The Commerce Building, this location has many classrooms and lecture halls to sit in.",
-    "tags": [6, 8, 12, 15, 18],
+    "tags": [
+      6,
+      8,
+      12,
+      15,
+      18
+    ],
     "website": "http://ada.fs.illinois.edu/0054PLAN1.html",
     "image_id": "david_kinley_hall_1"
   },
@@ -154,9 +162,16 @@
     "id": 65,
     "maps_id": "ChIJyYXA3KLXDIgRizSDBgHhBMA",
     "name": "Lincoln Hall",
-    "short_name": "Lincoln Hall",
+    "short_name": "Lincoln",
     "description": "Lincoln Hall contains four floors which includes classrooms, a theater, conference rooms, and offices for faculty.",
-    "tags": [6, 8, 12, 13, 15, 18],
+    "tags": [
+      6,
+      8,
+      12,
+      13,
+      15,
+      18
+    ],
     "website": "https://foellinger.illinois.edu/lincoln-hall-theater/",
     "image_id": "lincoln_hall_1"
   },
@@ -168,12 +183,6 @@
     "description": "UIUC's largest auditorium that seats up to 2,059 members.",
     "tags": [5, 6],
     "website": "https://foellinger.illinois.edu/"
-  },
-  {
-    "id": 67,
-    "maps_id": "ChIJb4FfDxbXDIgRWgzAqvbwE2s",
-    "name": "Smith Memorial Hall",
-    "short_name": "Smith Hall"
   },
   {
     "id": 68,
@@ -192,12 +201,6 @@
     "description": "Agriculture building filled mainly with classrooms.",
     "tags": [5, 6, 18],
     "website": "https://uihistories.library.illinois.edu/virtualtour/maincampus/davenport/"
-  },
-  {
-    "id": 73,
-    "maps_id": "ChIJueNKfBbXDIgR2hp4iss0Fnc",
-    "name": "La Casa Cultural Latina",
-    "short_name": "La Casa"
   },
   {
     "id": 78,
@@ -221,9 +224,17 @@
     "id": 86,
     "maps_id": "ChIJZ9trgBHXDIgR3KFYrAKfvGI",
     "name": "Caffe Paradiso",
-    "short_name": "Caffe Paradiso",
+    "short_name": "Paradiso",
     "description": "A cozy coffee shop on Lincoln Ave with tables to work at",
-    "tags": [2, 5, 8, 11, 12, 13, 22],
+    "tags": [
+      2,
+      5,
+      8,
+      11,
+      12,
+      13,
+      22
+    ],
     "website": "http://www.enjoyparadiso.com/",
     "image_id": "caffe_paradiso_1"
   },
@@ -235,12 +246,6 @@
     "description": "Large performing arts center with various stages for performances.",
     "tags": [3, 5, 6, 12],
     "website": "https://music.illinois.edu/krannert-center-performing-arts"
-  },
-  {
-    "id": 93,
-    "maps_id": "ChIJ58E2BxXXDIgRGNbTasTa5sQ",
-    "name": "Justin Smith Morrill Hall",
-    "short_name": "Morrill Hall"
   },
   {
     "id": 95,
@@ -316,24 +321,6 @@
     "website": "https://math.illinois.edu/resources/history-altgeld-hall"
   },
   {
-    "id": 123,
-    "maps_id": "ChIJFbOvCj_XDIgRvgXR-i7aYCE",
-    "name": "Cocomero",
-    "short_name": "Cocomero"
-  },
-  {
-    "id": 125,
-    "maps_id": "ChIJp2VVbT_XDIgR5Wxw1qbuiqc",
-    "name": "Teamoji",
-    "short_name": "Teamoji"
-  },
-  {
-    "id": 126,
-    "maps_id": "ChIJxwkLcT_XDIgRZtmcVWJWhgo",
-    "name": "Spoon House Korean Kitchen",
-    "short_name": "Spoon House"
-  },
-  {
     "id": 129,
     "maps_id": "ChIJAczTOz_XDIgRqWfwfdK_K2U",
     "name": "Kung Fu Tea",
@@ -343,30 +330,6 @@
     "website": "https://kungfutea.com/menu/"
   },
   {
-    "id": 130,
-    "maps_id": "ChIJCSclLObXDIgRx5nRqQU4cmg",
-    "name": "Asian Taste",
-    "short_name": "Asian Taste"
-  },
-  {
-    "id": 131,
-    "maps_id": "ChIJd8v1dj3XDIgRGFyGofX9zrE",
-    "name": "South Quad",
-    "short_name": "South Quad"
-  },
-  {
-    "id": 132,
-    "maps_id": "ChIJKbzhJD7XDIgREompraEpLn8",
-    "name": "Main Quad",
-    "short_name": "Main Quad"
-  },
-  {
-    "id": 133,
-    "maps_id": "ChIJb4aQBxPXDIgRCV_EQyiVgws",
-    "name": "Hallene Gateway",
-    "short_name": "Hallene Gateway"
-  },
-  {
     "id": 137,
     "maps_id": "ChIJASGfuhTXDIgRac9qLZ-gsOU",
     "name": "Loomis Laboratory Of Physics, University Of Illinois",
@@ -374,24 +337,6 @@
     "description": "Main Physics building with various laboratory areas an lecture halls, along with some seating in the corridor.",
     "tags": [5, 6, 12, 18],
     "website": "https://physics.illinois.edu/research/facilities"
-  },
-  {
-    "id": 138,
-    "maps_id": "ChIJu9TEbZXXDIgRZ6-SXW-uvn0",
-    "name": "Sidney Lu Mechanical Engineering Building",
-    "short_name": "Sidney Lu Building"
-  },
-  {
-    "id": 139,
-    "maps_id": "ChIJ-1qO-j_XDIgRRyMBf46-EXM",
-    "name": "Materials Science and Engineering Building",
-    "short_name": "Matse Building"
-  },
-  {
-    "id": 140,
-    "maps_id": "ChIJsT_RLNvXDIgRwzBhIw0jUAE",
-    "name": "Engineering Hall",
-    "short_name": "Engineering Hall"
   },
   {
     "id": 141,
@@ -406,20 +351,14 @@
     "id": 143,
     "maps_id": "ChIJccMLBUDXDIgRoVgxhCMQ5jY",
     "name": "Bardeen Quadrangle",
-    "short_name": "Bardeen Quad",
+    "short_name": "Bardeen",
     "description": "Pleasant view with boneyard creek going through it and some outdoor seating.",
-    "tags": [6,13],
+    "tags": [
+      6,
+      13
+    ],
     "website": "https://uihistories.library.illinois.edu/virtualtour/engineering/bardeenquad/",
     "image_id": "bardeen_quad_1"
-  },
-  {
-    "id": 144,
-    "maps_id": "ChIJQ5lPE23XDIgRD6LvRKYCcOY",
-    "name": "Campus Instructional Facility (CIF)",
-    "short_name": "CIF",
-    "description": "5 story building with large classrooms that act as study areas when classes are not in session. Can find quieter areas upstairs where less students are roaming.",
-    "tags": [1, 5, 6, 8, 10, 12, 15, 18],
-    "website": "https://cif.illinois.edu/"
   },
   {
     "id": 145,
@@ -427,15 +366,24 @@
     "name": "Grainger Engineering Library",
     "short_name": "Grainger",
     "description": "Library with solo study spaces and group ones too. Has a cafe and you can rent a charger here.",
-    "tags": [2, 5, 6, 7, 8, 9, 11, 12, 15, 16, 17, 19, 20, 21],
+    "tags": [
+      2,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21
+    ],
     "website": "https://www.library.illinois.edu/enx/",
     "image_id": "grainger_1"
-  },
-  {
-    "id": 146,
-    "maps_id": "ChIJBw-jr2rXDIgR-z33ibzqWnA",
-    "name": "Mechanical Engineering Laboratory",
-    "short_name": "ME Lab"
   },
   {
     "id": 156,
@@ -451,41 +399,13 @@
     "maps_id": "ChIJM-RtnWrXDIgRRP-cVNJU2Lo",
     "name": "Digital Computer Laboratory",
     "short_name": "DCL",
-    "description": "This relatively cozy building has some tables and benches in the basement to study at. ",
-    "tags": [6,17,18],
+    "description": "This relatively cozy building has some tables and benches in the basement to study at.",
+    "tags": [
+      6,
+      17,
+      18
+    ],
     "website": "http://ada.fs.illinois.edu/0210.html",
     "image_id": "dcl_1"
-  },
-  {
-    "id": 161,
-    "maps_id": "ChIJi4IA30HXDIgRfnz0Z73MpfI",
-    "name": "Coordinated Science Laboratory",
-    "short_name": "CSL"
-  },
-  {
-    "id": 164,
-    "maps_id": "ChIJE1PgJpLXDIgRLt5D7qb2Rjo",
-    "name": "BakeLab",
-    "short_name": "BakeLab"
-  },
-  {
-    "id": 166,
-    "maps_id": "ChIJxXYj3PvXDIgRYwrUpo6gS-8",
-    "name": "Bearology\r",
-    "short_name": "Bearology"
-  },
-  {
-    "id": 169,
-    "maps_id": "ChIJYdQjsDjXDIgRAcnsygN7VKI",
-    "name": "BrewLab Coffee",
-    "short_name": "BrewLab",
-    "description": "Small coffee shop with limited seating inside, and tables outdoors.",
-    "tags": [1, 2, 11, 13, 22],
-    "website": "https://www.brewlab.coffee/home"
-  },
-  {
-    "id": 172,
-    "maps_id": "ChIJg4haaEjXDIgRJsKelGXDHDE",
-    "name": "Boneyard Creek Second Street Basin"
   }
 ]
