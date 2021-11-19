@@ -60,17 +60,20 @@ public class HomePage extends AppCompatActivity {
         searchButton.setOnClickListener(v -> StartSearchByName());
 
         ImageView forYou = (ImageView)findViewById(R.id.for_you_button);
-        forYou.setOnClickListener(v -> StartCustomFilterSearch(onboardingSet.toArray()));
+        Integer[] onboarding_array = new Integer[onboardingSet.size()];
+        onboarding_array = onboardingSet.toArray(onboarding_array);
+        Integer[] finalOnboarding_array = onboarding_array;
+        forYou.setOnClickListener(v -> StartCustomFilterSearch(finalOnboarding_array));
 
         Playlist[] playlists = JsonReader.getPlaylists(this);
         LinearLayout playlist_layout = findViewById(R.id.playlist_layout);
 
         for (Playlist playlist : playlists) {
-            Log.d("Next playlist ",playlist.playlist_name.toString());
-//            LinearLayout playlist_view = PlaylistView.makePlaylist(this,playlist, tags);
-//            playlist_layout.addView(playlist_view);
-//            View button = playlist_view.getChildAt(0);
-//            button.setOnClickListener(v -> StartCustomFilterSearch(playlist.tag_ids));
+            Log.d("Next playlist ",playlist.Playlist.toString());
+            LinearLayout playlist_view = PlaylistView.makePlaylist(this,playlist, tags);
+            playlist_layout.addView(playlist_view);
+            View button = playlist_view.getChildAt(0);
+            button.setOnClickListener(v -> StartCustomFilterSearch(playlist.Tags));
         }
     }
 

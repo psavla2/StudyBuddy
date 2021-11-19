@@ -30,7 +30,7 @@ public class PlaylistView {
         button_layout.rightMargin = R.dimen.playlist_margin;
         button_layout.weight = 0;
         playlist_name.setLayoutParams(button_layout);
-        playlist_name.setText(playlist.playlist_name);
+        playlist_name.setText(playlist.Playlist);
 
         HorizontalScrollView chip_container = new HorizontalScrollView(ctx);
         LinearLayout.LayoutParams chip_container_params = new LinearLayout.LayoutParams(R.dimen.chip_container_width, LinearLayout.LayoutParams.MATCH_PARENT);
@@ -43,7 +43,7 @@ public class PlaylistView {
 
 
         //get playlist tags
-        Set<Integer> playlistSet = new HashSet<Integer>(Arrays.asList(playlist.tag_ids));
+        Set<Integer> playlistSet = new HashSet<Integer>(Arrays.asList(playlist.Tags));
 
 
         for (Tag t : tags) {
