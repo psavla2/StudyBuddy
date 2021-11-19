@@ -164,6 +164,7 @@
                         android:paddingBottom="5dp">
 
 
+<<<<<<< Updated upstream
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -188,6 +189,14 @@
                         <Space android:layout_width="20dp" android:layout_height="wrap_content">
 
                         </Space>
+=======
+                        <ImageView
+                            android:id="@+id/for_you_button"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="40dp"
+                            android:src="@drawable/circle2" />
+>>>>>>> Stashed changes
 
                         <RelativeLayout
                             android:layout_width="150dp"
