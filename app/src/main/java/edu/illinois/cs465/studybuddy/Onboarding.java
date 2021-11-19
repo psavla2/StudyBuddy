@@ -68,14 +68,14 @@ public class Onboarding extends AppCompatActivity {
         });
 
         //Debug Button
-        btnDebug = findViewById(R.id.buttonDebug);
-        btnDebug.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String s = myPrefs.getString("forYou", "");
-                Log.d("findTheForYou", s);
-            }
-        });
+//         btnDebug = findViewById(R.id.buttonDebug);
+//         btnDebug.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View v) {
+//                 String s = myPrefs.getString("forYou", "");
+//                 Log.d("findTheForYou", s);
+//             }
+//         });
 
     }
 
