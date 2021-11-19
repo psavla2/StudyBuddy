@@ -165,6 +165,7 @@
 
 
                         <ImageView
+                            android:id="@+id/for_you_button"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:layout_marginRight="40dp"
