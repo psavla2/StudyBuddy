@@ -7,8 +7,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
@@ -57,6 +59,19 @@ public class HomePage extends AppCompatActivity {
         ImageView searchButton = (ImageView)findViewById(R.id.home_page_search_button);
         searchButton.setOnClickListener(v -> StartSearchByName());
 
+        ImageView forYou = (ImageView)findViewById(R.id.for_you_button);
+        forYou.setOnClickListener(v -> StartCustomFilterSearch(onboardingSet.toArray()));
+
+        Playlist[] playlists = JsonReader.getPlaylists(this);
+        LinearLayout playlist_layout = findViewById(R.id.playlist_layout);
+
+        for (Playlist playlist : playlists) {
+            Log.d("Next playlist ",playlist.playlist_name.toString());
+//            LinearLayout playlist_view = PlaylistView.makePlaylist(this,playlist, tags);
+//            playlist_layout.addView(playlist_view);
+//            View button = playlist_view.getChildAt(0);
+//            button.setOnClickListener(v -> StartCustomFilterSearch(playlist.tag_ids));
+        }
     }
 
     //go to the home page
@@ -84,6 +99,12 @@ public class HomePage extends AppCompatActivity {
 
     private void StartSearchByName() {
         Intent intent = new Intent(this, NameSearchActivity.class);
+        startActivity(intent);
+    }
+
+    private void StartCustomFilterSearch(java.io.Serializable value) {
+        Intent intent = new Intent(this, FilterSearchActivity.class);
+        intent.putExtra("filter_tags", value);
         startActivity(intent);
     }
 }
