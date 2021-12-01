@@ -1,9 +1,16 @@
 package edu.illinois.cs465.studybuddy;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static edu.illinois.cs465.studybuddy.R.color.black;
+import static edu.illinois.cs465.studybuddy.R.style.Theme_Design;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,6 +33,7 @@ public class Onboarding extends AppCompatActivity {
     private Button filterSubmit;
     private Button btnDebug;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,12 +50,18 @@ public class Onboarding extends AppCompatActivity {
             Chip chip = (Chip)inflater.inflate(R.layout.space_filter_chip, filters, false);
             chip.setId(t.id);
             chip.setText(t.tag);
+            //Set Text Color
+            chip.setTextColor(Color.rgb(103, 80, 164));
+            chip.setChipBackgroundColorResource(R.color.white);
+            chip.setChipStrokeWidth(2);
+            chip.setChipStrokeColorResource(R.color.purple_border);
             chip.setOnCheckedChangeListener((buttonView, isChecked) -> {
                 if (isChecked) {
+                    chip.setChipBackgroundColorResource(R.color.purple_selected);
                     selectedTags.add(buttonView.getId());
                 } else {
+                    chip.setChipBackgroundColorResource(R.color.white);
                     selectedTags.remove(buttonView.getId());
-
                 }
             });
             filters.addView(chip);
