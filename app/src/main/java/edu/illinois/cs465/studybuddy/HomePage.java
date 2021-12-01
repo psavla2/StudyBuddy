@@ -5,19 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -65,15 +69,44 @@ public class HomePage extends AppCompatActivity {
         Integer[] finalOnboarding_array = onboarding_array;
         forYou.setOnClickListener(v -> StartCustomFilterSearch(finalOnboarding_array));
 
-        Playlist[] playlists = JsonReader.getPlaylists(this);
-        LinearLayout playlist_layout = findViewById(R.id.playlist_layout);
+        Playlist[] playlists = JsonReader.getPlaylists(this); //grabs and converts the json of all playlist data into the playlist class.
+        LinearLayout playlist_layout = findViewById(R.id.playlist_layout); // LinearLayout that holds all playlist cards in the home page.
+        double max_playlist_height = 0; // max_playlist_height holds the height of the tallest container made using makePlaylist to later construct cards of consistent height.
+        ArrayList<LinearLayout> playlist_containers = new ArrayList<LinearLayout>(); // playlist_containers will hold all linearlayouts built using makePlaylist.
 
         for (Playlist playlist : playlists) {
-            Log.d("Next playlist ",playlist.Playlist.toString());
-            LinearLayout playlist_view = PlaylistView.makePlaylist(this,playlist, tags);
-            playlist_layout.addView(playlist_view);
+            Log.d("Next playlist ", playlist.Playlist.toString());
+            LinearLayout playlist_view = PlaylistView.makePlaylist(this, playlist, tags);
+            playlist_containers.add(playlist_view);
+            if (playlist_view.getHeight() > max_playlist_height)
+            {
+                max_playlist_height = playlist_view.getHeight();
+            }
             View button = playlist_view.getChildAt(0);
             button.setOnClickListener(v -> StartCustomFilterSearch(playlist.Tags));
+        }
+        for (LinearLayout container : playlist_containers){
+            Log.d("Next playlist ", "container");
+            //TODO - ADD CARD to back of linearlayout. (Add playlist_view to card)
+            MaterialCardView card = PlaylistView.makePlaylistCard(this, container, (int) max_playlist_height);
+            LinearLayout vert_temp = new LinearLayout(this);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+            vert_temp.setLayoutParams(params);
+            vert_temp.setGravity(Gravity.CENTER);
+
+            card.addView(vert_temp);
+            vert_temp.addView(container);
+            LinearLayout for_margins = new LinearLayout(this);
+
+            for_margins.setOrientation(LinearLayout.HORIZONTAL);
+            LinearLayout.LayoutParams for_margins_layout = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            DisplayMetrics displayMetrics = this.getResources().getDisplayMetrics();
+            for_margins_layout.topMargin = Math.round(5 * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
+            for_margins_layout.bottomMargin = Math.round(5 * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
+            for_margins.setLayoutParams(for_margins_layout);
+            for_margins.setGravity(Gravity.CENTER);
+            for_margins.addView(card);
+            playlist_layout.addView(for_margins);
         }
     }
 
