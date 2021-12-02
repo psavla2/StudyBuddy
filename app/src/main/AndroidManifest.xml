@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.illinois.cs465.studybuddy">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -11,15 +14,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyBuddy">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
             android:name=".NameSearchActivity"
             android:exported="false" />
         <activity
             android:name=".Onboarding"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".HomePage"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -42,11 +50,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".HomePage"
-            android:exported="true">
-
         </activity>
     </application>
 

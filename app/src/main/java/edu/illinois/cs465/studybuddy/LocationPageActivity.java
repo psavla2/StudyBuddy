@@ -71,31 +71,25 @@ public class LocationPageActivity extends AppCompatActivity {
         }
 
         maps_id = (extrasBundle == null) ? null : (String) extrasBundle.get("maps_id");
+    }
 
-        ImageView mapsButton = findViewById(R.id.location_page_gmaps_button);
-        mapsButton.setOnClickListener(v -> OpenGoogleMaps());
+    public String GetGoogleMapsPlaceId() {
+        if (maps_id == null) {
+            maps_id = (String) getIntent().getExtras().get("maps_id");
+        }
+        return maps_id;
+    }
+
+    public String GetLocationName() {
+        if (name == null) {
+            name = (String) getIntent().getExtras().get("name");
+        }
+        return name;
     }
 
     private void AddStartingTags(Integer [] filterTags) {
         if (filterTags == null) return;
 
         Collections.addAll(mSelectedTags, filterTags);
-    }
-
-    private void OpenGoogleMaps() {
-        try {
-            String encodedName = URLEncoder.encode(name, StandardCharsets.UTF_8.name());
-            String queryUrl = String.format("https://www.google.com/maps/search/?api=1&query=%s&query_place_id=%s?z=16", encodedName, maps_id);
-            Log.d("Google Maps Query", queryUrl);
-            Uri gMapsUri = Uri.parse(queryUrl);
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gMapsUri);
-            mapIntent.setPackage("com.google.android.apps.maps");
-            if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(mapIntent);
-            }
-        } catch (java.io.UnsupportedEncodingException e) {
-            e.printStackTrace();
-            Log.e("Unsupported Encoding", name);
-        }
     }
 }
