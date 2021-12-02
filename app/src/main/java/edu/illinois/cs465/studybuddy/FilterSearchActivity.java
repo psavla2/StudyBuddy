@@ -1,6 +1,7 @@
 package edu.illinois.cs465.studybuddy;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.MotionEvent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -63,8 +65,20 @@ public class FilterSearchActivity extends AppCompatActivity {
             Chip chip = (Chip)inflater.inflate(R.layout.space_filter_chip, filters, false);
             chip.setId(t.id);
             chip.setText(t.tag);
+
+            chip.setTextColor(Color.rgb(103, 80, 164));
+            chip.setChipBackgroundColorResource(R.color.white);
+            chip.setChipStrokeWidth(2);
+            chip.setChipStrokeColorResource(R.color.purple_border);
             chip.setChecked(mSelectedTags.contains(t.id));
-            chip.setOnCheckedChangeListener((buttonView, isChecked) -> ChangeTag(buttonView.getId(), isChecked));
+            chip.setOnCheckedChangeListener((buttonView, isChecked) -> {
+                ChangeTag(buttonView.getId(), isChecked);
+                if (isChecked) {
+                    chip.setChipBackgroundColorResource(R.color.purple_selected);
+                } else {
+                    chip.setChipBackgroundColorResource(R.color.white);
+                }
+            });
             filters.addView(chip);
         }
     }
@@ -74,7 +88,8 @@ public class FilterSearchActivity extends AppCompatActivity {
 
         // use a linear layout manager
 
-        mLayoutManager = new LinearLayoutManager(this);
+        int numberOfColumns = 2;
+        mLayoutManager = new GridLayoutManager(this, numberOfColumns);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter and pass in our locationItemList
