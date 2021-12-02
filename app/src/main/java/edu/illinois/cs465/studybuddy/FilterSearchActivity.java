@@ -70,7 +70,13 @@ public class FilterSearchActivity extends AppCompatActivity {
             chip.setChipBackgroundColorResource(R.color.white);
             chip.setChipStrokeWidth(2);
             chip.setChipStrokeColorResource(R.color.purple_border);
-            chip.setChecked(mSelectedTags.contains(t.id));
+            if (mSelectedTags.contains(t.id)) {
+                chip.setChecked(true);
+                chip.setChipBackgroundColorResource(R.color.purple_selected);
+            } else {
+                chip.setChecked(false);
+            }
+            
             chip.setOnCheckedChangeListener((buttonView, isChecked) -> {
                 ChangeTag(buttonView.getId(), isChecked);
                 if (isChecked) {
