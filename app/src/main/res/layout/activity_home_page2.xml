@@ -38,7 +38,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/nunito_bold"
                     android:gravity="center"
                     android:text="Find a place to study"
                     android:textSize="30dp"></TextView>
@@ -154,7 +153,6 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/nunito_bold"
                         android:gravity="center"
                         android:text="Playlist"
                         android:textSize="28dp"></TextView>
