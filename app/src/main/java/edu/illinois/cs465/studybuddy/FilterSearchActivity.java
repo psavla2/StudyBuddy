@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -74,7 +75,8 @@ public class FilterSearchActivity extends AppCompatActivity {
 
         // use a linear layout manager
 
-        mLayoutManager = new LinearLayoutManager(this);
+        int numberOfColumns = 2;
+        mLayoutManager = new GridLayoutManager(this, numberOfColumns);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter and pass in our locationItemList
