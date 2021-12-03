@@ -55,7 +55,7 @@
     "id": 156,
     "maps_id": "ChIJqXmEqmvXDIgRMJY1DdQBn04",
     "name": "Department of Computer Science, University of Illinois Urbana-Champaign",
-    "short_name": "Siebel",
+    "short_name": "Siebel CS",
     "description": "Located on Matthews and Stoughton, this is the main center for Computer Science resources, including classrooms and computer labs for students to actively use. This is a great space to utilize if you want to work on a EWS computer, get group work done, or study on your own. If you're looking to recharge, there is an Einstein Bros. located on the main floor. If you go up stairs, you'll be able to access an outside study space located on the north side of the building.",
     "tags": [
       1,
@@ -93,7 +93,7 @@
     "id": 23,
     "maps_id": "ChIJXQMDUA_XDIgRCMznJSyf--c",
     "name": "Siebel Center for Design",
-    "short_name": "SCD",
+    "short_name": "Siebel Design",
     "description": "Located on 4th and Peabody , this is a uniquely designed building with whiteboards on almost every wall -- It really is the place to go if you're looking at getting some design work done for a project. There are areas for both group and individual study.",
     "tags": [
       1,
@@ -575,7 +575,7 @@
     "id": 68,
     "maps_id": "ChIJHYDd4RXXDIgR3-xxGERt71A",
     "name": "Foreign Languages Building",
-    "short_name": "",
+    "short_name": "FLB",
     "description": "Located on the Main Quad, this is the primary location for language courses, it includes many classrooms and small areas to sit down and get work done while you're waiting for your next class. The north entrance has a nice section of seating outside if you're looking to get some reading done while enjoing the nice weather.",
     "tags": [
       6,

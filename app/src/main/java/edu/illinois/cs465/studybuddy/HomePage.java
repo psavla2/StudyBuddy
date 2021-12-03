@@ -48,6 +48,7 @@ public class HomePage extends AppCompatActivity {
             chip.setId(t.id);
             chip.setText(t.tag);
             if (!onboardingSet.contains(t.id)) continue;
+            chip.setEnsureMinTouchTargetSize(false);
             filters.addView(chip);
         }
 

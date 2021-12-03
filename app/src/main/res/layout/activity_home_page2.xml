@@ -28,11 +28,26 @@
 
                 android:orientation="vertical">
                 <!--                reset button-->
-                <ImageView
-                    android:id="@+id/home_page_reset_button"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:src="@drawable/ic_reset"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/home_page_reset_button"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_reset"></ImageView>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reset onboarding" />
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -248,9 +263,9 @@
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <ScrollView
+                                            <LinearLayout
                                                 android:layout_width="wrap_content"
-                                                android:layout_height="150dp">
+                                                android:layout_height="wrap_content">
 
                                                 <com.google.android.material.chip.ChipGroup
                                                     android:id="@+id/home_page_chips"
@@ -259,7 +274,7 @@
                                                     android:paddingLeft="10dp">
 
                                                 </com.google.android.material.chip.ChipGroup>
-                                            </ScrollView>
+                                            </LinearLayout>
                                         </LinearLayout>
 
                                     </RelativeLayout>

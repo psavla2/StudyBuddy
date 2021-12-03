@@ -52,8 +52,8 @@ public class PlaylistView {
         LayoutInflater inflater = LayoutInflater.from(ctx);
         ChipGroup filters = new ChipGroup(ctx);
         LinearLayout.LayoutParams filters_params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        filters_params.bottomMargin = -Math.round(10 * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
-        filters_params.topMargin = -Math.round(10 * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
+//        filters_params.bottomMargin = -Math.round(10 * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
+//        filters_params.topMargin = -Math.round(10 * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
         filters_params.gravity = Gravity.CENTER;
 
 //        get playlist tags
@@ -66,9 +66,11 @@ public class PlaylistView {
             chip.setText(t.tag);
             chip.setCheckable(false);
             if (!playlistSet.contains(t.id)) continue;
+            chip.setEnsureMinTouchTargetSize(false);
             filters.addView(chip);
         }
         filters.setLayoutParams(filters_params);
+
         chip_container.addView(filters);
         toReturn.addView(playlist_name);
         toReturn.addView(chip_container);
