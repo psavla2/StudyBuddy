@@ -4,7 +4,7 @@
     "maps_id": "ChIJYdQjsDjXDIgRAcnsygN7VKI",
     "name": "BrewLab Coffee",
     "short_name": "BrewLab",
-    "description": "Small coffee shop with limited seating inside, and tables outdoors.",
+    "description": "Located on 5th and Green, this cozy coffee shop is great for getting some reading in or other independent assignments if you live in the area. In addition there is a whiteboard at this location if you are interested in getting some group work in outside of home. There are some tables outside, inside, and a counter lined with chairs. This is definitely worth checking out as the coffee tastes great here!",
     "tags": [
       1,
       2,
@@ -13,14 +13,14 @@
       22
     ],
     "website": "https://www.brewlab.coffee/home",
-    "image_id": ""
+    "image_id": "brewlab_1"
   },
   {
     "id": 78,
     "maps_id": "ChIJL-RUMBTXDIgRq4QEFngxrXg",
     "name": "Espresso Royale",
     "short_name": "Espresso Royale",
-    "description": "Traditional coffee shop with cozy chairs and warm atmosphere.",
+    "description": "Located on Goodwin and Oregon, this coffee shop is a great option for all sorts of studying. There are two rooms on the ground floor and an additional area to study up stairs. If you are looking to bask in some sunlight, there are many windows at this location, and an outside area that you can study at as well. That being said, the location isnt't the roomiest, so while it might be nice to study alongside a friend here, group work is not reccomended. There are enough food options nearby to make this place a go-to if you study out often.",
     "tags": [
       1,
       2,
@@ -31,14 +31,14 @@
       22
     ],
     "website": "https://espressocu.square.site/",
-    "image_id": ""
+    "image_id": "espresso_royale_1"
   },
   {
     "id": 80,
     "maps_id": "ChIJmShlBxTXDIgRrSUw8yFgLFc",
     "name": "Caffé Bene",
     "short_name": "Caffé Bene",
-    "description": "Traditional cofee shop feel with more options for seating and cozy atmosphere.",
+    "description": "Located on Gregory and Oregon, this coffee shop has a larger variety than the Espresso Royale nearby. If you're looking to indulge in some sweets or a savory snack while getting your study on, this is the place for you. This study spot is great if you stay in the LAR dorms, ISR, or are coming right out of CRCE. There is a lot of tablespace at this location, but it can get packed, so keep an eye out for how busy it is on google maps.",
     "tags": [
       1,
       2,
@@ -49,14 +49,14 @@
       22
     ],
     "website": "https://www.caffebeneurbana.com/",
-    "image_id": ""
+    "image_id": "caffe_bene_1"
   },
   {
     "id": 156,
     "maps_id": "ChIJqXmEqmvXDIgRMJY1DdQBn04",
     "name": "Department of Computer Science, University of Illinois Urbana-Champaign",
     "short_name": "Siebel",
-    "description": "Main center for Computer Science resources, includes classrooms and computer labs for students to actively use.",
+    "description": "Located on Matthews and Stoughton, this is the main center for Computer Science resources, including classrooms and computer labs for students to actively use. This is a great space to utilize if you want to work on a EWS computer, get group work done, or study on your own. If you're looking to recharge, there is an Einstein Bros. located on the main floor. If you go up stairs, you'll be able to access an outside study space located on the north side of the building.",
     "tags": [
       1,
       2,
@@ -71,14 +71,14 @@
       18
     ],
     "website": "https://cs.illinois.edu/about",
-    "image_id": ""
+    "image_id": "siebel_center_cs_1"
   },
   {
     "id": 110,
     "maps_id": "ChIJv6yp7D7XDIgRiY-0q-92Th8",
     "name": "Illini Union Bookstore",
     "short_name": "Bookstore",
-    "description": "Student center and merch shop that also has areas to work and get coffee in a louder setting.",
+    "description": "Located on Daniel and Wright, this location has a Starbucks that you can recharge at in the middle of the day. There are some tables here, but don't expect to be able to do group work here. If you have a quick assignment you want to get done, or want to get some light studying in, this is the place for you.",
     "tags": [
       1,
       2,
@@ -87,14 +87,14 @@
       12
     ],
     "website": "https://bookstore.illinois.edu/",
-    "image_id": ""
+    "image_id": "bookstore_1"
   },
   {
     "id": 23,
     "maps_id": "ChIJXQMDUA_XDIgRCMznJSyf--c",
     "name": "Siebel Center for Design",
     "short_name": "SCD",
-    "description": "A uniquely designed building with whiteboards on almost every wall. Areas for both group and individual study.",
+    "description": "Located on 4th and Peabody , this is a uniquely designed building with whiteboards on almost every wall -- It really is the place to go if you're looking at getting some design work done for a project. There are areas for both group and individual study.",
     "tags": [
       1,
       4,
@@ -106,14 +106,14 @@
       18
     ],
     "website": "https://designcenter.illinois.edu/",
-    "image_id": ""
+    "image_id": "siebel_center_design_1"
   },
   {
     "id": 144,
     "maps_id": "ChIJQ5lPE23XDIgRD6LvRKYCcOY",
     "name": "Campus Instructional Facility (CIF)",
     "short_name": "CIF",
-    "description": "5 story building with large classrooms that act as study areas when classes are not in session. Can find quieter areas upstairs where less students are roaming.",
+    "description": "Located on Springfield and Wright, this 5 story building packs quite the punch when it comes to studying. With large classrooms that act as study areas when classes are not in session, you'll find that you can study at this location for any and all of your needs. These classrooms have projectors available and whiteboards, making them easily suitable for group work. If you're looking to get some work in on your own, moving further up in this building will lead to quieter spaces and a more tranquil environment.",
     "tags": [
       1,
       5,
@@ -125,14 +125,14 @@
       18
     ],
     "website": "https://cif.illinois.edu/",
-    "image_id": ""
+    "image_id": "cif_1"
   },
   {
     "id": 7,
     "maps_id": "ChIJq3dgmhDXDIgRyCQxatZeJBw",
     "name": "Stanley Illini Grove",
     "short_name": "Illini Grove",
-    "description": "Picnic tables available to pick up a book and get some reading in.",
+    "description": "Located on Lincoln and Pennsylvania, this pleasant grove is just the spot to get some reading in or to brush up on some notes when it's nice out. If you're looking to study with friends, you can hang out at the picnic tables have a small barbeque, and play a game of volleyball when you're done.",
     "tags": [
       1,
       5,
@@ -148,7 +148,7 @@
     "maps_id": "ChIJAczTOz_XDIgRqWfwfdK_K2U",
     "name": "Kung Fu Tea",
     "short_name": "Kung Fu Tea",
-    "description": "Popular boba location with cozy feel and multiple tables for getting work done.",
+    "description": "Located on 6th and John, this location offers many tea options as well as a number of tasty dishes if you're looking for a light bite. It's a great place to study with a friend when the stakes aren't so high. A word of warning, however, I've not had a lot of good luck with cell service at this location.",
     "tags": [
       2,
       3,
@@ -156,14 +156,14 @@
       22
     ],
     "website": "https://kungfutea.com/menu/",
-    "image_id": ""
+    "image_id": "kung_fu_tea_1"
   },
   {
     "id": 119,
     "maps_id": "ChIJtVT0DevQDIgRg2QaCHxOuuc",
     "name": "Illini Union",
     "short_name": "Union",
-    "description": "Large student center with multiple floors with different personalities. Middle floor has areas for lively study spots, whereas the basement includes more recreational activities and a food court.",
+    "description": "Located just North of the Main Quad, this large student center has multiple floors with different personalities. In the basement you can find a food court with many tables to sit at, allowing for a good burst in productivity. On the main floor,  you have the option to sit in the presidential room for some quiet study action, and of course there is the main room that has a Starbucks to recharge at when you need that extra boost. Finally, there is seating outside of this building that can be found at the South and West entrances. Definitely a go-to if it's the middle of the school-day and you need a place to get some light work done.",
     "tags": [
       2,
       3,
@@ -181,14 +181,14 @@
       18
     ],
     "website": "https://union.illinois.edu/",
-    "image_id": ""
+    "image_id": "illini_union_1"
   },
   {
     "id": 32,
     "maps_id": "ChIJeUz7YTrXDIgRC0QtdLZNcOc",
     "name": "Student Dining and Residential Programs Building",
     "short_name": "IKE",
-    "description": "Large student center with casual seating all around, as well as quieter and focused spots upstairs.",
+    "description": "Located just South of Gregory and 3rd, this location is underrated for getting a good study session going. If you have a meal plan, you have the luxury of being able to grab a bite at the dining center at this location, and if you don't there's always the cafe with serviceable options on the second floor. Ate the IKE, you have access to a computer lab, and a number of tables on both floors. This is a nice location to get group work done if your buddies live in the area or if you are looking for a solid spot to study at after hittin' the ARC.",
     "tags": [
       2,
       3,
@@ -207,14 +207,14 @@
       21
     ],
     "website": "https://housing.illinois.edu/aboutus/sdrp",
-    "image_id": ""
+    "image_id": "sdrp_1"
   },
   {
     "id": 113,
     "maps_id": "ChIJ_9y4QxPXDIgR2r8UrWf8UZw",
     "name": "Illinois Street Residence Halls",
     "short_name": "ISR",
-    "description": "Newest student center with dining and various options to study, ranging from quieter to more lively.",
+    "description": "Located on Illinois and Gregory, this newly refurbished dorm hall also exhibits a dining hall, and a number of tables to study",
     "tags": [
       2,
       4,
@@ -228,14 +228,14 @@
       20
     ],
     "website": "https://preview.housing.illinois.edu/Resources/residence-hall-libraries/locations/isr-library",
-    "image_id": ""
+    "image_id": "isr_1"
   },
   {
     "id": 145,
     "maps_id": "ChIJtViDlmrXDIgRwp5DMl59fK4",
     "name": "Grainger Engineering Library",
     "short_name": "Grainger",
-    "description": "Library with solo study spaces and group ones too. Has a cafe and you can rent a charger here.",
+    "description": "Located just north of the Engineering Quad, this library an all-star spot for studying. There are computers accesible on any floor, printing on the main floor, and seating galore. If you want to work alone there are individual booths on the second floor upwards, there is the larger study tables that can be found on the west side of the 4th floor. If you want a bite, or a drink, the Espresso Royale has you covered. This place stays opened late and there is almost always seating unless you happen to be there during finals.",
     "tags": [
       2,
       5,
@@ -260,7 +260,7 @@
     "maps_id": "ChIJbcxsjT3XDIgRrjTeNpUyYIY",
     "name": "Undergraduate Library",
     "short_name": "UGL",
-    "description": "This university library has 2 floors, the lowest commonly regarded as the quiet area. Many different areas to sit down or reserve in advance.",
+    "description": "Located North of Gregory and South of the Main Quad, this study space is pleasant to go to if you're looking to get some work done. As you descend to the first available floor, you'll see a multitude of tables, some computers, a coffee shop, a path leading to the Main Library, and a Writer's workshop if you're looking for some feedback on your paper. If you descend another floor, you'll see the quiet section of the library, where you can get some reading done. You can also rent games and technology (like cameras!), so don't snooze on this place!",
     "tags": [
       2,
       5,
@@ -275,14 +275,14 @@
       21
     ],
     "website": "https://www.library.illinois.edu/ugl/",
-    "image_id": ""
+    "image_id": "ugl_1"
   },
   {
     "id": 86,
     "maps_id": "ChIJZ9trgBHXDIgR3KFYrAKfvGI",
     "name": "Caffe Paradiso",
     "short_name": "Caffe Paradiso",
-    "description": "A cozy coffee shop on Lincoln Ave with tables to work at",
+    "description": "Located on Lincoln and Nevada, this coffee shop will not let you down if you're looking for a place to study. The coffee is real tasty, and the sandwiches always hit the spot. There is some seating indoors and outdoors, but the place is a bit small, so be sure to check out how packed it is before choosing to study here. If you're looking to get some work done outside of your living space, and you're somewhere along Lincoln, this may be the place for you! Note that there is parking at this location, but the lot is quite limited.",
     "tags": [
       2,
       5,
@@ -300,7 +300,7 @@
     "maps_id": "ChIJs2weZhTXDIgR9-Mz0s0qNrs",
     "name": "Krannert Center for the Performing Arts",
     "short_name": "Krannert Center",
-    "description": "Large performing arts center with various stages for performances.",
+    "description": "Located just South of ISR, the Krannert center is quite the gem when it comes to study spots. There is outdoor seating around the perimeter of this location, and a number of tables indoors if you so desire. Inside there is a coffee shop if you're looking for something to sip on as you get your work done.",
     "tags": [
       3,
       5,
@@ -308,14 +308,14 @@
       12
     ],
     "website": "https://music.illinois.edu/krannert-center-performing-arts",
-    "image_id": ""
+    "image_id": "kcfpa_1"
   },
   {
     "id": 24,
     "maps_id": "ChIJu-iLrDrXDIgRttGoUNxRUgc",
     "name": "University of Illinois Campus Recreation",
     "short_name": "ARC",
-    "description": "Classrooms and tables available to study within UIUC's largest recreation center.",
+    "description": "Located on Peabody, and South of the IKE, the ARC is a solid spot to study at before getting a good pump in! There is some seating at the main entrance where you can get a view of the basketball court while you watch your lectures. Once you're done you can swipe yourself in and get those reps!",
     "tags": [
       4,
       6,
@@ -325,14 +325,14 @@
       16
     ],
     "website": "https://campusrec.illinois.edu/facilities/activities-and-recreation-center-arc/",
-    "image_id": ""
+    "image_id": "arc_1"
   },
   {
     "id": 99,
     "maps_id": "ChIJv6yp7D7XDIgRiY-0q-92Th8",
     "name": "Department of Psychology",
     "short_name": "Psych Building",
-    "description": "Area for Psychology classrooms and services, also has a smaller computer lab for use.",
+    "description": "Located on 6th and Daniel, the Psych building offers a tranquil green space on the main floor to study at if you're looking to enjoy some natural lighting. In addition, there are classrooms you can study at if that is your cup of tea, along with a small computer lab that is accessible in case you need the technology. While half the bulding does not have windows, this is intended so as to not disturb people during ongoing studies.",
     "tags": [
       4,
       6,
@@ -340,28 +340,28 @@
       18
     ],
     "website": "https://psychology.illinois.edu/resources/department-resources/facilities/location-and-hours",
-    "image_id": ""
+    "image_id": "psychology_1"
   },
   {
     "id": 64,
     "maps_id": "ChIJqRj-AoHXDIgRPx7RYZXhn1Q",
     "name": "Gregory Hall",
     "short_name": "Gregory Hall",
-    "description": "Main department for History, has a few lounges for certain students.",
+    "description": "Located along Wright, Gregory hall has some lounges where study along with classrooms that are available when class isn't in session. If you like to study in classrooms, this may be a good place to hunker down and get crackin'. It is a convenient place to study for those that reside in Newman.",
     "tags": [
       4,
       6,
       18
     ],
     "website": "https://history.illinois.edu/academics/graduate-studies/current-students/survival-guide-hgsa/gregory-hall",
-    "image_id": ""
+    "image_id": "gregory_hall_1"
   },
   {
     "id": 55,
     "maps_id": "ChIJFwJwvjvXDIgReBmVK2_VIQs",
     "name": "University of Illinois Armory",
     "short_name": "Armory",
-    "description": "Unique spot that is home to the ROTC offices. Offers a large array of classrooms to study in, if you can navigate the maze...",
+    "description": "Located on... you guessed it, Armory, this unique spot that is home to the ROTC offices. It offers a large array of classrooms to study in, and seating along the long hallways that surround the track in the center. The upper floors are confusing to navigate, but if you find yourself at this place, you'd be impressed at how well it serves as a study space in between classes.",
     "tags": [
       5,
       6,
@@ -369,14 +369,14 @@
       18
     ],
     "website": "https://fightingillini.com/facilities/ui-armory/5",
-    "image_id": ""
+    "image_id": "armory_1"
   },
   {
     "id": 137,
     "maps_id": "ChIJASGfuhTXDIgRac9qLZ-gsOU",
     "name": "Loomis Laboratory Of Physics, University Of Illinois",
     "short_name": "Loomis",
-    "description": "Main Physics building with various laboratory areas an lecture halls, along with some seating in the corridor.",
+    "description": "Located on Green and Goodwin, This is the main Physics building with various laboratory areas and lecture halls. While not abundant, there are some classrooms and tables you can study at if you are looking to get some work done, and there is usually a taco truck that is posted up on the West entrance during the day.",
     "tags": [
       5,
       6,
@@ -384,14 +384,14 @@
       18
     ],
     "website": "https://physics.illinois.edu/research/facilities",
-    "image_id": ""
+    "image_id": "loomis_1"
   },
   {
     "id": 120,
     "maps_id": "ChIJqWprsD_XDIgRpHUf_8i8Duc",
     "name": "Altgeld Hall",
     "short_name": "Altgeld Hall",
-    "description": "Historical feeling building home to many Mathematics resources. Mainly filled with classrooms and main Mathematics Library.",
+    "description": "Located on Wright and Green, this historical building is home to many Mathematics resources and the secret Dairy Queen. There are many classrooms to study in at the basement level, and you also can access the Mathematics library, which has a lot of seating at your disposal. This location is quite close to all of the buisnesses on Green, making this a solid spot to study at it you're looking to have a bite afterwards.",
     "tags": [
       5,
       6,
@@ -399,28 +399,29 @@
       21
     ],
     "website": "https://math.illinois.edu/resources/history-altgeld-hall",
-    "image_id": ""
+    "image_id": "altgeld_1"
   },
   {
     "id": 69,
     "maps_id": "ChIJ-b_t9hXXDIgR2SIIkBGBBro",
     "name": "Davenport Hall",
     "short_name": "Davenport Hall",
-    "description": "Agriculture building filled mainly with classrooms.",
+    "description": "Located on the Main Quad, this building has a number of classrooms to sit in if you're looking to hunker down and get some studying in. Beyond that, there aren't any real open spaces to study at, but it most definitely works if you're looking to work with a group in the afternoon.",
     "tags": [
       5,
       6,
+      13,
       18
     ],
     "website": "https://uihistories.library.illinois.edu/virtualtour/maincampus/davenport/",
-    "image_id": ""
+    "image_id": "davenport_hall_1"
   },
   {
     "id": 98,
     "maps_id": "ChIJdbQnQj7XDIgRSCQkRPvFOM4",
     "name": "University of Illinois at Urbana-Champaign Department of English",
     "short_name": "English Building",
-    "description": "Older feeling building mainly composed of classrooms, but also has areas to settle in.",
+    "description": "Located on the Main Quad, this building has a multitude of classrooms to study in on the main floor and in the basement. There is a pleasant open space on the basement floor that has a skylight right above it, making this place the perfect space to study at if you need a transitionary study space in the middle of the day. If you're pulling an all-nighter, this space might not be a bad choice as it features vending machines.",
     "tags": [
       5,
       6,
@@ -428,14 +429,14 @@
       18
     ],
     "website": "https://en.wikipedia.org/wiki/English_Building,_University_of_Illinois_Urbana-Champaign",
-    "image_id": ""
+    "image_id": "english_1"
   },
   {
     "id": 11,
     "maps_id": "ChIJwR71sBfXDIgRv9mtjD_0x14",
     "name": "ACES Library",
     "short_name": "ACES Library",
-    "description": "Library with classrooms to study on your own or with a small group.",
+    "description": "Located on Goodwin, this spot is an excellent choice for those that live in the area or want convenient parking options. There are many rooms to study at and the windows provide an excellent view out into the world if you're looking to study somewhere that isn't so enclosed. There are tables available as well, making this a great go-to for any situation.",
     "tags": [
       5,
       6,
@@ -456,47 +457,47 @@
     "maps_id": "ChIJyWA1Bj7XDIgRCMKLB-RaR-w",
     "name": "Foellinger Auditorium",
     "short_name": "Foellinger",
-    "description": "UIUC's largest auditorium that seats up to 2,059 members.",
+    "description": "Located on the Main Quad, this is UIUC's largest auditorium, seating up to 2,059 members. If you're looking to get some peace and quiet, you can study in the auditorium after-hours, or sit at the many tables available just south of this Auditorium outside. When the weather is splendid out, this location is great for reading a book, or reviewing notes.",
     "tags": [
       5,
       6
     ],
     "website": "https://foellinger.illinois.edu/",
-    "image_id": ""
+    "image_id": "foelinger_1"
   },
   {
     "id": 49,
     "maps_id": "ChIJH26PaxHXDIgRC-omrwv-rVs",
     "name": "Campus Recreation Center East",
     "short_name": "CRCE",
-    "description": "Small amount of seating and tables scattered around UIUC's second largest recreation center.",
+    "description": "Located on Dorner and Gregory, this recreation center has some seating available as long as you swipe in. If you're looking to get some work done before a workout, this is a great place to make sure you're right on schedule with your day. There's nothing like getting a good workout pump after getting that pesky discussion post over with.",
     "tags": [
       6,
       12,
       14
     ],
     "website": "https://campusrec.illinois.edu/facilities/campus-recreation-center-east-crce/",
-    "image_id": ""
+    "image_id": "crce_1"
   },
   {
     "id": 95,
     "maps_id": "ChIJd8U1gxXXDIgREfaRySm4rJc",
     "name": "Noyes Laboratory",
     "short_name": "Noyes",
-    "description": "Main Chemistry building containing mulit-use labs, classrooms, and office space.",
+    "description": "Located on the Main Quad, there are some good collaborative classrooms you can grab at this location as long as you bring your own markers during after-hours. Beyond that, there are some tables in the hallways, but it's nothing to write home about.\\",
     "tags": [
       6,
       18
     ],
     "website": "https://explorecu.org/items/show/294",
-    "image_id": ""
+    "image_id": "noyes_1"
   },
   {
     "id": 19,
     "maps_id": "ChIJVZTcqiTXDIgRixTfOYpAOQg",
     "name": "University of Illinois College of Law",
     "short_name": "Law Building",
-    "description": "An extremely quiet area scattered with tables for independent study.",
+    "description": "Located on Pennsylvania, this is an extremely quiet area scattered with tables for independent study. There is a lovely atrium you can study at, if you can manage access into it. In addition, you can't go wrong with the cafe in operation on the west wing of the building.",
     "tags": [
       6,
       7,
@@ -505,28 +506,28 @@
       21
     ],
     "website": "https://law.illinois.edu/academics/library/",
-    "image_id": ""
+    "image_id": "law_1"
   },
   {
     "id": 54,
     "maps_id": "ChIJa_UstD3XDIgRZUlIgRXSgeo",
     "name": "Main Library",
     "short_name": "Main Library",
-    "description": "Includes a number of specialized libraries as well as quiet study rooms and seating.",
+    "description": "Located on Gregory and 6th, this library includes a number of specialized libraries as well as quiet study rooms and an abundance of seating. There are a multitude of floors to choose from and books galore. If you're looking to do some research, you can't go wrong with this location.",
     "tags": [
       6,
       7,
       21
     ],
     "website": "https://www.library.illinois.edu/",
-    "image_id": ""
+    "image_id": "main_library_1"
   },
   {
     "id": 65,
     "maps_id": "ChIJyYXA3KLXDIgRizSDBgHhBMA",
     "name": "Lincoln Hall",
     "short_name": "Lincoln Hall",
-    "description": "Lincoln Hall contains four floors which includes classrooms, a theater, conference rooms, and offices for faculty.",
+    "description": "Located on the Main Quad, Lincoln Hall contains four floors which includes classrooms, a theater, and conference rooms to study at. This place is excellent for getting your finals studying in as you can rub the nose Abraham Lincoln's statue for good luck. This tried and true method will grant you more points on any exam than rubbing any other presidential statue's nose.",
     "tags": [
       6,
       8,
@@ -543,7 +544,7 @@
     "maps_id": "ChIJk-StWQzXDIgRNzKIHPOND7g",
     "name": "George Huff Hall",
     "short_name": "Huff Hall",
-    "description": "Multi-use facility with a gymnasium. South of the Armory.",
+    "description": "Located on 4th and Gregory, Huff hall has a number of classrooms to study at when you're looking for a place to do group work in the evening with some buddies.",
     "tags": [
       6,
       8,
@@ -559,7 +560,7 @@
     "maps_id": "ChIJ51_2pz3XDIgRm_U3cL9O62k",
     "name": "David Kinley Hall",
     "short_name": "David Kinley",
-    "description": "Once known as The Commerce Building, this location has many classrooms and lecture halls to sit in.",
+    "description": "Located on the South Quad, David Kinley Hall, once known as The Commerce Building has various classrooms you can hunker down in to get work done with a group, or to get a study session going for finals. The location is convenient for bus commuting as the 22 passes through it along with a number of other busses.",
     "tags": [
       6,
       8,
@@ -575,35 +576,21 @@
     "maps_id": "ChIJHYDd4RXXDIgR3-xxGERt71A",
     "name": "Foreign Languages Building",
     "short_name": "",
-    "description": "Main location for language courses, includes many classrooms and small areas to sit down and work.",
+    "description": "Located on the Main Quad, this is the primary location for language courses, it includes many classrooms and small areas to sit down and get work done while you're waiting for your next class. The north entrance has a nice section of seating outside if you're looking to get some reading done while enjoing the nice weather.",
     "tags": [
       6,
       8,
       18
     ],
     "website": "https://uihistories.library.illinois.edu/virtualtour/maincampus/flb/",
-    "image_id": ""
-  },
-  {
-    "id": 97,
-    "maps_id": "ChIJ-b_t9hXXDIgR2SIIkBGBBro",
-    "name": "Davenport Hall",
-    "short_name": "Davenport Hall",
-    "description": "Located by the quad, many classrooms to study in.",
-    "tags": [
-      6,
-      13,
-      18
-    ],
-    "website": "http://ada.fs.illinois.edu/0001.html",
-    "image_id": "davenport_hall_1"
+    "image_id": "foreign_1"
   },
   {
     "id": 143,
     "maps_id": "ChIJccMLBUDXDIgRoVgxhCMQ5jY",
     "name": "Bardeen Quadrangle",
     "short_name": "Bardeen Quad",
-    "description": "Pleasant view with boneyard creek going through it and some outdoor seating.",
+    "description": "Located just North of Green, this hilly quad hosts a lovely creek you can sit by if you're looking to read a book, and there are some tables to sit at by the southern bit of this quad.",
     "tags": [
       6,
       13
@@ -616,7 +603,7 @@
     "maps_id": "ChIJM-RtnWrXDIgRRP-cVNJU2Lo",
     "name": "Digital Computer Laboratory",
     "short_name": "DCL",
-    "description": "This relatively cozy building has some tables and benches in the basement to study at.",
+    "description": "Located on Springfield and Matthews, this building has some seating on the basement level if you're looking to get a prelecture done as you enjoy your packed lunch. In addition there is a CBTF here, so if you're planning ahead, you can book a timeslot at this location and study for your quiz in the basement before kicking butt on said quiz!",
     "tags": [
       6,
       17,
@@ -630,7 +617,7 @@
     "maps_id": "ChIJqVBsJzzXDIgRnIFTmkSiVWw",
     "name": "St. John's Catholic Newman Center",
     "short_name": "Newman",
-    "description": "Private housing location with rooms available for residents to study or rent out.",
+    "description": "Located on 6th and Armory, this private certified housing is open to the public during daytime hours, and there are many tables to sit at if you're looking to get a group study session going with your buddies that may live here.",
     "tags": [
       7,
       12,
@@ -638,14 +625,14 @@
       20
     ],
     "website": "https://www.sjcnc.org/",
-    "image_id": ""
+    "image_id": "newman_1"
   },
   {
     "id": 39,
     "maps_id": "ChIJBe2qxP3XDIgRV5W_-SsuPrM",
     "name": "Business Instructional Facility",
     "short_name": "BIF",
-    "description": "Main building for Business students and resources, filled with classrooms and tables for group study",
+    "description": "Located on 6th and Gregory, this is the main building for Business students and resources. It is filled with classrooms and tables for group study, so you can definitely depend on this space to get group work done as long as you bring dry erase markers",
     "tags": [
       1,
       5,
@@ -656,14 +643,14 @@
       18
     ],
     "website": "https://giesbusiness.illinois.edu/our-story/facilities",
-    "image_id": ""
+    "image_id": "bif_1"
   },
   {
     "id": 141,
     "maps_id": "ChIJNfcijj_XDIgR4kQwtWU0hAE",
     "name": "Everitt Laboratory (Electrical and Computer Engineering Laboratory)",
     "short_name": "Everitt Lab",
-    "description": "Home of Bioengineering department with areas for classes, lectures, and some tables spread out for silent study.",
+    "description": "Located on Grene, this is the home of the Bioengineering department. There areareas for classes, lectures, and some tables spread out for silent study. In addition the classrooms here are excellent for group study as there are a multitude of whiteboards, a projector, you name it. There is parking nearby, but you will have to pay.",
     "tags": [
       5,
       6,
@@ -671,6 +658,6 @@
       18
     ],
     "website": "https://everitt.illinois.edu/",
-    "image_id": ""
+    "image_id": "everitt_1"
   }
 ]
