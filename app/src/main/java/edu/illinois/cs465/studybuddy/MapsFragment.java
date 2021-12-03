@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -22,13 +23,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.gson.Gson;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.Properties;
+import java.util.Calendar;
 
 import okhttp3.Call;
 import okhttp3.OkHttpClient;
@@ -47,6 +47,7 @@ public class MapsFragment extends Fragment {
     class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 
         private final View mWindow;
+        private String hoursText;
 
         CustomInfoWindowAdapter() {
             mWindow = getLayoutInflater().inflate(R.layout.marker_info_window, null);
@@ -64,19 +65,30 @@ public class MapsFragment extends Fragment {
         }
 
         private void render(Marker marker, View v) {
-            TextView title = v.findViewById(R.id.info_window_title);
-            title.setText(marker.getTitle());
+            TextView titleTextView = v.findViewById(R.id.info_window_title);
+            titleTextView.setText(marker.getTitle());
+
+            if (hoursText != null) {
+                TextView hoursTextView = v.findViewById(R.id.hours_text);
+                hoursTextView.setText(hoursText);
+            }
+        }
+
+        public void setHoursText(String hoursText) {
+            this.hoursText = hoursText;
         }
     }
 
     private OnMapReadyCallback callback = googleMap -> {
         googleMap.getUiSettings().setMapToolbarEnabled(false);
-        googleMap.setInfoWindowAdapter(new CustomInfoWindowAdapter());
+
+        CustomInfoWindowAdapter ciwa = new CustomInfoWindowAdapter();
+        googleMap.setInfoWindowAdapter(ciwa);
 
         OkHttpClient client = new OkHttpClient().newBuilder()
                     .build();
         Request request = new Request.Builder()
-                .url(String.format("https://maps.googleapis.com/maps/api/place/details/json?place_id=%s&fields=geometry&key=%s",
+                .url(String.format("https://maps.googleapis.com/maps/api/place/details/json?place_id=%s&fields=geometry%%2Copening_hours&key=%s",
                         placeId, getResources().getString(R.string.google_maps_key)))
                 .method("GET", null)
                 .build();
@@ -91,19 +103,38 @@ public class MapsFragment extends Fragment {
                 if (!response.isSuccessful()) {
                     throw new IOException("Unexpected code " + response);
                 } else {
+                    LatLng latLng = null;
+                    String hoursText = null;
+
                     try {
-                        JSONObject json = new JSONObject(response.body().string());
-                        JSONObject geometryLocation = json.getJSONObject("result").getJSONObject("geometry").getJSONObject("location");
-                        LatLng locationLatlng = new LatLng(geometryLocation.getDouble("lat"), geometryLocation.getDouble("lng"));
-                        Log.d("resp latlng", locationLatlng.toString());
-                        getActivity().runOnUiThread(() -> {
-                            googleMap.addMarker(new MarkerOptions()
-                                    .position(locationLatlng)
-                                    .title(locName));
-                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(locationLatlng, 16f));
-                        });
+                        String resp = response.body().string();
+                        Log.d("response", resp);
+                        JSONObject jsonRes = new JSONObject(resp);
+                        JSONObject geometryLocation = jsonRes.getJSONObject("result").getJSONObject("geometry").getJSONObject("location");
+                        latLng = new LatLng(geometryLocation.getDouble("lat"), geometryLocation.getDouble("lng"));
+
+                        Calendar c = Calendar.getInstance();
+                        int numericalDOW = (c.get(Calendar.DAY_OF_WEEK) + 5) % 7;
+                        hoursText = (String)jsonRes.getJSONObject("result").getJSONObject("opening_hours").getJSONArray("weekday_text").get(numericalDOW);
+
                     } catch (JSONException | NullPointerException e) {
                         e.printStackTrace();
+                    }
+
+                    if (latLng != null) {
+                        LatLng finalLatLng = latLng;
+                        String finalHoursText = hoursText;
+                        getActivity().runOnUiThread(() -> {
+                            Marker locationMarker = googleMap.addMarker(new MarkerOptions()
+                                    .position(finalLatLng)
+                                    .title(locName));
+                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(finalLatLng, 16f));
+                            if (finalHoursText != null) {
+                                ciwa.setHoursText(finalHoursText);
+                            }
+
+                            locationMarker.showInfoWindow();
+                        });
                     }
                 }
             }
