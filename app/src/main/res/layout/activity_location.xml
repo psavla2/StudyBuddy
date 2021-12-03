@@ -10,6 +10,9 @@
     sothree:umanoPanelHeight="68dp"
     sothree:umanoShadowHeight="4dp">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -93,29 +96,20 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <HorizontalScrollView
-                android:id="@+id/horizontalScrollView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:fadingEdgeLength="30dp"
-                android:requiresFadingEdge="horizontal">
-
                 <com.google.android.material.chip.ChipGroup
                     android:id="@+id/filters_chip_group"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="15dp"
-                    app:chipSpacingVertical="0dp">
-
-                </com.google.android.material.chip.ChipGroup>
-            </HorizontalScrollView>
+                    app:chipStartPadding="0dp"
+                    app:chipMinTouchTargetSize="0dp"
+                    app:chipSpacingVertical="0dp"/>
 
             <fragment
                 class="edu.illinois.cs465.studybuddy.MapsFragment"
                 android:id="@+id/map_fragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="240dp"/>
 
 <!--            <LinearLayout-->
 <!--                android:layout_width="wrap_content"-->
@@ -150,6 +144,9 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    </ScrollView>
+
     <!--- Scroll comment out above two lines to enable
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

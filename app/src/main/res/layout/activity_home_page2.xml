@@ -27,7 +27,7 @@
                 android:layout_weight="1"
 
                 android:orientation="vertical">
-<!--                reset button-->
+                <!--                reset button-->
                 <ImageView
                     android:id="@+id/home_page_reset_button"
                     android:layout_width="35dp"
@@ -120,27 +120,27 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-<!--                        <ImageView-->
-<!--                            android:id="@+id/home_page_reset_button"-->
-<!--                            android:layout_width="120dp"-->
-<!--                            android:layout_height="120dp"-->
-<!--                            android:clickable="true"-->
-<!--                            android:src="@drawable/circle"></ImageView>-->
+                        <!--                        <ImageView-->
+                        <!--                            android:id="@+id/home_page_reset_button"-->
+                        <!--                            android:layout_width="120dp"-->
+                        <!--                            android:layout_height="120dp"-->
+                        <!--                            android:clickable="true"-->
+                        <!--                            android:src="@drawable/circle"></ImageView>-->
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="45dp"-->
-<!--                            android:layout_height="45dp"-->
-<!--                            android:layout_marginTop="-100dp"-->
-<!--                            android:src="@drawable/ic_reset"></ImageView>-->
+                        <!--                        <ImageView-->
+                        <!--                            android:layout_width="45dp"-->
+                        <!--                            android:layout_height="45dp"-->
+                        <!--                            android:layout_marginTop="-100dp"-->
+                        <!--                            android:src="@drawable/ic_reset"></ImageView>-->
 
 
-<!--                        <TextView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_marginTop="0dp"-->
-<!--                            android:text="Reset\nOnboarding"-->
-<!--                            android:textAlignment="center"-->
-<!--                            android:textSize="15dp"></TextView>-->
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="0dp"-->
+                        <!--                            android:text="Reset\nOnboarding"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textSize="15dp"></TextView>-->
                     </LinearLayout>
                 </LinearLayout>
 
@@ -157,111 +157,121 @@
                         android:text="Playlist"
                         android:textSize="28dp"></TextView>
 
-                    <LinearLayout
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:minWidth="200dp"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="20dp"
-                        android:paddingBottom="5dp">
-
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="#fffbfe">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
+                            android:layout_marginTop="20dp"
                             android:gravity="center"
-                            >
+                            android:minWidth="200dp"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp">
 
-                            <ImageView
-                                android:id="@+id/for_you_button"
-                                android:layout_width="150dp"
-                                android:layout_height="150dp"
-                                android:src="@drawable/circle" />
-                            <TextView
+
+                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-95dp"
-                                android:text="For You"
-                                android:textSize="25dp"></TextView>
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/for_you_button"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/circle" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-95dp"
+                                    android:text="For You"
+                                    android:textSize="25dp"></TextView>
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content">
+
+                            </Space>
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                tools:context="dev.edmt.androideasyflipview.MainActivity">
+
+                                <com.wajahatkarim3.easyflipview.EasyFlipView
+                                    android:id="@+id/easyFlipView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    app:flipDuration="500"
+                                    app:flipEnabled="true"
+                                    app:flipOnTouch="true"
+                                    app:flipType="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:background="@drawable/elcap" />
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentRight="true"
+                                            android:src="@drawable/ic_info_icon" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <ScrollView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="150dp">
+
+                                                <com.google.android.material.chip.ChipGroup
+                                                    android:id="@+id/home_page_chips"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:paddingLeft="10dp">
+
+                                                </com.google.android.material.chip.ChipGroup>
+                                            </ScrollView>
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+
+                                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+
+                            </RelativeLayout>
+
 
                         </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
 
-                        <Space android:layout_width="20dp" android:layout_height="wrap_content">
-
-                        </Space>
-                        <RelativeLayout
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            tools:context="dev.edmt.androideasyflipview.MainActivity">
-
-                            <com.wajahatkarim3.easyflipview.EasyFlipView
-                                android:id="@+id/easyFlipView"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_centerInParent="true"
-                                app:flipDuration="500"
-                                app:flipEnabled="true"
-                                app:flipOnTouch="true"
-                                app:flipType="horizontal">
-
-                                <RelativeLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_centerInParent="true"
-                                        android:background="@drawable/elcap" />
-
-                                    <ImageView
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:layout_alignParentRight="true"
-                                        android:src="@drawable/ic_info_icon" />
-
-                                </RelativeLayout>
-
-                                <RelativeLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_centerInParent="true" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <ScrollView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="150dp">
-
-                                            <com.google.android.material.chip.ChipGroup
-                                                android:id="@+id/home_page_chips"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:paddingLeft="10dp">
-
-                                            </com.google.android.material.chip.ChipGroup>
-                                        </ScrollView>
-                                    </LinearLayout>
-
-                                </RelativeLayout>
-
-
-                            </com.wajahatkarim3.easyflipview.EasyFlipView>
-
-
-                        </RelativeLayout>
-
-
-                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
