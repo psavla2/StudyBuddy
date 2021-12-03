@@ -51,7 +51,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 cardImageView.setImageDrawable(locationImage);
             }
 
-            nameTextView.setText(dataModel.getName());
+            nameTextView.setText(dataModel.getShortName());
             descriptionTextView.setText(dataModel.getDescription());
         }
     }

@@ -14,6 +14,8 @@ public class LocationItem {
         return space.name;
     }
 
+    public String getShortName() { return space.short_name; }
+
     public String getDescription() {
         return space.description;
     }
