@@ -1,6 +1,7 @@
 package edu.illinois.cs465.studybuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -67,9 +68,13 @@ public class NameSearchActivity extends AppCompatActivity {
 
     private void UpdateRecycler() {
         mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(this);
+        /*mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
+        */
+        int numberOfColumns = 2;
+        mLayoutManager = new GridLayoutManager(this, numberOfColumns);
+        mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new MyAdapter(mSortedSpacesList, this);
         mRecyclerView.setAdapter(mAdapter);
     }
